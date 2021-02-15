@@ -1,66 +1,73 @@
 <template>
-    <div class="wrapper">
-        <nav class="navbar pl-0 pr-0 test">
-                <div class="logo-and-burger">
-                    <NuxtLink to="/" exact>
-                        <div class="logo-container">
-                            <img class="logo" src="/img/ids-industrial-logo.png" alt="">
-                        </div>
-                    </NuxtLink>
-                </div>
-                <ul class="nav-menu">
-                    <li><nuxt-link to="#" exact>About</nuxt-link></li>
-                    <!-- item with subitems  -->
-                    <li class="item has-submenu">
-                        <NuxtLink to="/services" tabindex="0" exact>Services</NuxtLink>
-                        <button type="button" class="submenu-toggle" aria-expanded="false" v-on:click="toggleItem($event)">
-                            <span class="submenu-open-icon">
-                                <i class="fa fa-caret-down"></i>
-                            </span>
-                        </button>
-                        <ul class="submenu">
-                            <li class="subitem"><nuxt-link to="#" exact>item 1</nuxt-link></li>
-                            <li class="subitem"><nuxt-link to="#" exact>item 1</nuxt-link></li>
-                            <li class="subitem"><nuxt-link to="#" exact>item 1</nuxt-link></li>
-                            <li class="subitem"><nuxt-link to="#" exact>item 1</nuxt-link></li>
-                            <li class="subitem"><nuxt-link to="#" exact>item 1</nuxt-link></li>
-                            <li class="subitem"><nuxt-link to="#" exact>item 1</nuxt-link></li>
-                            <li class="subitem"><nuxt-link to="#" exact>item 1</nuxt-link></li>
-                        </ul>
-                    </li>
-                    <!-- end of item with subitems  -->
-                    <!-- item with subitems  -->
-                    <li class="item has-submenu">
-                        <NuxtLink to="/industries" tabindex="0" exact>Industries</NuxtLink>
-                        <button type="button" class="submenu-toggle" aria-expanded="false" v-on:click="toggleItem($event)">
-                            <span class="submenu-open-icon">
-                                <i class="fa fa-caret-down"></i>
-                            </span>
-                        </button>
-                        <ul class="submenu">
-                            <li class="subitem"><nuxt-link to="#" exact>item 1</nuxt-link></li>
-                            <li class="subitem"><nuxt-link to="#" exact>item 1</nuxt-link></li>
-                            <li class="subitem"><nuxt-link to="#" exact>item 1</nuxt-link></li>
-                            <li class="subitem"><nuxt-link to="#" exact>item 1</nuxt-link></li>
-                            <li class="subitem"><nuxt-link to="#" exact>item 1</nuxt-link></li>
-                            <li class="subitem"><nuxt-link to="#" exact>item 1</nuxt-link></li>
-                            <li class="subitem"><nuxt-link to="#" exact>item 1</nuxt-link></li>
-                        </ul>
-                    </li>
-                    <!-- end of item with subitems  -->
-                    <li><nuxt-link to="contact" exact>Contact</nuxt-link></li>
-                </ul>
-                <button id="burger-menu" aria-expanded="false" v-on:click="toggleMenu()">
-                    <div class="burger-line"></div>
-                    <div class="burger-line"></div>
-                    <div class="burger-line"></div>
-                </button>
-        </nav>
+    <div class="container-fluid" >
+        <div class="row nav-row" :class="{ scrolled : scrolled }">
+            <nav class="col-12 col-lg-11 pt-0 pb-0 navbar test" id="nav-menu">
+                    <div class="logo-and-burger">
+                        <NuxtLink to="/" exact>
+                            <div class="logo-container">
+                                <img class="logo" src="/img/ids-industrial-logo.png" alt="IDS Industrial Logo">
+                            </div>
+                        </NuxtLink>
+                    </div>
+                    <ul class="nav-menu">
+                        <li><nuxt-link to="/#about" exact>About</nuxt-link></li>
+                        <!-- item with subitems  -->
+                        <li class="item has-submenu">
+                            <NuxtLink to="/services" tabindex="0" exact>Services</NuxtLink>
+                            <button type="button" class="submenu-toggle" aria-expanded="false" v-on:click="toggleItem($event)">
+                                <span class="submenu-open-icon">
+                                    <i class="fa fa-caret-down"></i>
+                                </span>
+                            </button>
+                            <ul class="submenu">
+                                <li class="subitem"><nuxt-link to="#" exact>item 1</nuxt-link></li>
+                                <li class="subitem"><nuxt-link to="#" exact>item 1</nuxt-link></li>
+                                <li class="subitem"><nuxt-link to="#" exact>item 1</nuxt-link></li>
+                                <li class="subitem"><nuxt-link to="#" exact>item 1</nuxt-link></li>
+                                <li class="subitem"><nuxt-link to="#" exact>item 1</nuxt-link></li>
+                                <li class="subitem"><nuxt-link to="#" exact>item 1</nuxt-link></li>
+                                <li class="subitem"><nuxt-link to="#" exact>item 1</nuxt-link></li>
+                            </ul>
+                        </li>
+                        <!-- end of item with subitems  -->
+                        <!-- item with subitems  -->
+                        <li class="item has-submenu">
+                            <NuxtLink to="/industries" tabindex="0" exact>Industries</NuxtLink>
+                            <button type="button" class="submenu-toggle" aria-expanded="false" v-on:click="toggleItem($event)">
+                                <span class="submenu-open-icon">
+                                    <i class="fa fa-caret-down"></i>
+                                </span>
+                            </button>
+                            <ul class="submenu">
+                                <li class="subitem"><nuxt-link to="#" exact>item 1</nuxt-link></li>
+                                <li class="subitem"><nuxt-link to="#" exact>item 1</nuxt-link></li>
+                                <li class="subitem"><nuxt-link to="#" exact>item 1</nuxt-link></li>
+                                <li class="subitem"><nuxt-link to="#" exact>item 1</nuxt-link></li>
+                                <li class="subitem"><nuxt-link to="#" exact>item 1</nuxt-link></li>
+                                <li class="subitem"><nuxt-link to="#" exact>item 1</nuxt-link></li>
+                                <li class="subitem"><nuxt-link to="#" exact>item 1</nuxt-link></li>
+                            </ul>
+                        </li>
+                        <!-- end of item with subitems  -->
+                        <li><nuxt-link to="contact" exact>Contact</nuxt-link></li>
+                    </ul>
+                    <button id="burger-menu" aria-expanded="false" v-on:click="toggleMenu()">
+                        <div class="burger-line"></div>
+                        <div class="burger-line"></div>
+                        <div class="burger-line"></div>
+                    </button>
+            </nav>
+        </div>
     </div>
 </template>
 
 <script>
 export default {
+    data() {
+        return {
+            scrolled: false
+        }
+    },
     methods: {
         toggleMenu: function() {
             const menu = document.querySelector(".nav-menu");
@@ -120,16 +127,25 @@ export default {
                 btn.currentTarget.parentNode.classList.add("submenu-active");
                 btn.currentTarget.setAttribute("aria-expanded", true);
             }
+        },
+        handleScroll () {
+            if(window.scrollY > 30) {
+                this.scrolled = true
+            } else {
+                this.scrolled = false
+            }
         }
     },
-    mounted() {
-    // Register an event listener when the Vue component is ready
-    window.addEventListener('resize', this.onResize)
+    beforeMount () {
+        window.addEventListener('scroll', this.handleScroll);
     },
-
+    mounted() {
+        window.addEventListener('resize', this.onResize);
+    },
     beforeDestroy() {
     // Unregister the event listener before destroying this Vue instance
-    window.removeEventListener('resize', this.onResize)
+        window.removeEventListener('resize', this.onResize);
+        window.removeEventListener('scroll', this.handleScroll);
     },
     // toggleMenu on page change (remove menu) 
     watch:{
@@ -165,6 +181,7 @@ nav.navbar {
     top: 0;
     left: 0;
     width: 100%;
+    z-index: 999;
     background: white;
     overflow: hidden;
 
@@ -178,7 +195,6 @@ nav.navbar {
         left: 0;
         width: 100%;
         display: none;
-        background: lightblue;
         list-style: none;
         text-align: center;
 
@@ -247,15 +263,26 @@ nav.navbar {
     // burger
     #burger-menu {
         position: absolute;
-        top: 23px;
-        right: 24px;
+        top: 14px;
+        right: 17px;
+        background: transparent;
+        border: none;
 
         .burger-line {
             display: block;
+            position: relative;
             width: 35px;
             height: 4px;
-            background-color: black;
+            background-color: $ids-blue;
             margin: 7px;
+
+            &:nth-of-type(1){
+                width: 26px;
+            }
+            &:nth-of-type(3){
+                width: 26px;
+                right: -9px;
+            }
         }
     }
 }
@@ -263,95 +290,115 @@ nav.navbar {
 /* desktop */
 @media (min-width: 992px) {
 
-    nav.navbar {
+    .nav-row {
         position: fixed;
-        top: 0;
-        left: 50%;
-        transform: translateX(-50%);
-        display: flex;
-        align-items: center;
         width: 100%;
-        max-width: 2500px;
-        margin-top: 0;
-        margin-bottom: 0;
-        margin-right: auto;
-        margin-left: auto;
-        background: transparent;
-        overflow: initial;
+        height: 80px; //match navbar
+        z-index: 998;
+        transition: 0.5s ease-in;
 
-        // logo 
-        img.logo {
-            height: 100px;
-        }
-
-        ul.nav-menu {
+        nav.navbar {
+            position: fixed;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
             display: flex;
-            position: relative;
-            justify-content: center;
             align-items: center;
-            width: auto;
-            margin: 0;
-        
-            li {
-                width: auto;
-                margin: 0 5px;
-                padding: 5px 10px;
+            width: 100%;
+            margin-top: 0;
+            margin-bottom: 0;
+            margin-right: auto;
+            margin-left: auto;
+            background: transparent;
+            overflow: initial;
+            
 
-                a {
-                    font-size: 14px;
-                }
+            // logo 
+            img.logo {
+                height: 80px;
+            }
 
-                &:hover {
-                    background: $ids-yellow;
-                }
-
-                &.item {
+            ul.nav-menu {
+                display: flex;
                 position: relative;
+                justify-content: center;
+                align-items: center;
+                width: auto;
+                margin: 0;
+            
+                li {
+                    width: auto;
+                    margin: 0 5px;
+                    padding: 5px 10px;
 
-                    &.has-submenu {
-                        display: flex;
-                        align-items: center;
-                        flex-wrap: nowrap;
-                        overflow: visible;
+                    a {
+                        font-size: 12px;
+                        color: white;
+                    }
 
-                        /* submenu icons  */
-                        span.submenu-close-icon {
-                            display: none;
+                    &:hover {
+                        background: $ids-yellow;
+                    }
+
+                    &.item {
+                    position: relative;
+
+                        &.has-submenu {
+                            display: flex;
+                            align-items: center;
+                            flex-wrap: nowrap;
+                            overflow: visible;
+
+                            /* submenu icons  */
+                            span.submenu-close-icon {
+                                display: none;
+                            }
+
+                            &.submenu-active ul.submenu,
+                            &.has-submenu:hover > ul.submenu {
+                                display: block;
+                            }
+
+                            li.back-button {
+                                display: none;
+                            }
+
                         }
+                    }
 
-                        &.submenu-active > button > span.submenu-open-icon i,
-                        &.has-submenu:hover > button > span.submenu-open-icon i {
-
-                            // color: $ids-yellow;
-                        }
-
-                        &.submenu-active ul.submenu,
-                        &.has-submenu:hover > ul.submenu {
-                            display: block;
-                        }
-
-                        li.back-button {
-                            display: none;
-                        }
-
+                    ul.submenu {
+                        position: absolute;
+                        top: 100%;
+                        left: 0;
+                        height: auto;
+                        display: none;
+                        left: initial;
+                        width: auto;
                     }
                 }
-
-                ul.submenu {
-                    position: absolute;
-                    top: 100%;
-                    left: 0;
-                    height: auto;
-                    display: none;
-                    left: initial;
-                    width: auto;
-                }
+            
             }
-        
+
+            #burger-menu {
+                display: none;
+            }
+
         }
 
-        #burger-menu {
-            display: none;
+        // styles on scroll 
+        &.scrolled {
+            background: white;
+            transition: 0.5s ease-in;
+
+            nav.navbar ul.nav-menu li a {
+                color: $ids-blue;
+                transition: 0.5s ease-in;
+            }
+
+            nav.navbar ul.nav-menu li.item.has-submenu button.submenu-toggle span i {
+                color: $ids-blue;
+                transition: 0.5s ease-in;
+            }
         }
 
     }
