@@ -1,73 +1,52 @@
 <template>
-  <div class="container">
-    <div>
-      <Logo />
-      <h1 class="title">
-        ids-industrial
-      </h1>
-      <div class="links">
-        <a
-          href="https://nuxtjs.org/"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="button--green"
-        >
-          Documentation
-        </a>
-        <a
-          href="https://github.com/nuxt/nuxt.js"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="button--grey"
-        >
-          GitHub
-        </a>
-      </div>
+    <div class="wrapper page-content landing-home">
+        <!-- <h1>home</h1> -->
     </div>
-  </div>
 </template>
 
 <script>
-export default {}
+export default {
+  head(){
+    return {
+      title: 'IDS Industrial | Home',
+      meta: [
+        {
+          hid: 'description', //id
+          name: 'description', //meta type
+          content: 'PUT DESCRIPTION HERE' //meta content
+        }
+      ]
+    };
+  },
+}
 </script>
 
-<style>
-.container {
-  margin: 0 auto;
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
+<style scoped lang="scss">
+
+nav.navbar {
+  background: transparent;
 }
 
-.title {
-  font-family:
-    'Quicksand',
-    'Source Sans Pro',
-    -apple-system,
-    BlinkMacSystemFont,
-    'Segoe UI',
-    Roboto,
-    'Helvetica Neue',
-    Arial,
-    sans-serif;
-  display: block;
-  font-weight: 300;
-  font-size: 100px;
-  color: #35495e;
-  letter-spacing: 1px;
+div.landing-home {
+  height: 60vh;
+  min-height: 350px;
+  width: 100vw;
+  background: url('~static/img/power-station-carousel.jpeg') no-repeat center center; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
-.subtitle {
-  font-weight: 300;
-  font-size: 42px;
-  color: #526488;
-  word-spacing: 5px;
-  padding-bottom: 15px;
+
+/* desktop */
+@media (min-width: 992px) {
+
+  div.landing-home {
+    height: 100vh;
+    margin-top: 0;
+  }
+
 }
 
-.links {
-  padding-top: 15px;
-}
 </style>

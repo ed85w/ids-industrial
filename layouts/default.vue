@@ -1,62 +1,57 @@
 <template>
   <div>
+    <AppNavbar />
     <Nuxt />
+    <AppFooter />
   </div>
 </template>
 
+<script>
+
+import AppNavbar from '../components/AppNavbar';
+import AppFooter from '../components/AppFooter';
+
+export default {
+  components: {
+    AppNavbar,
+    AppFooter
+  }
+
+}
+</script>
 <style>
-html {
-  font-family:
-    'Source Sans Pro',
-    -apple-system,
-    BlinkMacSystemFont,
-    'Segoe UI',
-    Roboto,
-    'Helvetica Neue',
-    Arial,
-    sans-serif;
-  font-size: 16px;
-  word-spacing: 1px;
-  -ms-text-size-adjust: 100%;
-  -webkit-text-size-adjust: 100%;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-font-smoothing: antialiased;
-  box-sizing: border-box;
+
+/* WHOLE SITE SETTINGS */
+.test {
+  border: 2px solid red;
 }
 
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-  margin: 0;
+* {
+  font-family: 'Audiowide', cursive;;
 }
 
-.button--green {
-  display: inline-block;
-  border-radius: 4px;
-  border: 1px solid #3b8070;
-  color: #3b8070;
-  text-decoration: none;
-  padding: 10px 30px;
+.page-content {
+  margin-top: 100px
 }
 
-.button--green:hover {
-  color: #fff;
-  background-color: #3b8070;
+/* // Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+  
+}
+/* // Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+
 }
 
-.button--grey {
-  display: inline-block;
-  border-radius: 4px;
-  border: 1px solid #35495e;
-  color: #35495e;
-  text-decoration: none;
-  padding: 10px 30px;
-  margin-left: 15px;
+/* // Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+
 }
 
-.button--grey:hover {
-  color: #fff;
-  background-color: #35495e;
+/* // Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+
 }
+
+
 </style>
