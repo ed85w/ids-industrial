@@ -1,6 +1,7 @@
 <template>
   <div>
-    <AppNavbar />
+    <!-- <AppNavbar1 /> -->
+    <AppNavbar/>
     <Nuxt />
     <AppFooter />
   </div>
@@ -8,12 +9,14 @@
 
 <script>
 
-import AppNavbar from '../components/AppNavbar';
+// import AppNavbar1 from '../components/AppNavbar1';
 import AppFooter from '../components/AppFooter';
+import AppNavbar from '~/components/AppNavbar.vue';
 
 export default {
   components: {
     AppNavbar,
+    // AppNavbar1,
     AppFooter
   }
 
@@ -79,12 +82,6 @@ export default {
 
 /* // Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
-
-  .max-width-container {
-    /* max-width: 1000px; */
-    // margin-right: auto;
-    // margin-left: auto;
-  }
 
 }
 
