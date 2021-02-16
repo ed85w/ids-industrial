@@ -1,7 +1,7 @@
 <template>
   <div>
-    <!-- <AppNavbar1 /> -->
-    <AppNavbar/>
+    <AppNavbar1 />
+    <!-- <AppNavbar/> -->
     <Nuxt />
     <AppFooter />
   </div>
@@ -9,14 +9,14 @@
 
 <script>
 
-// import AppNavbar1 from '../components/AppNavbar1';
+import AppNavbar1 from '../components/AppNavbar1';
 import AppFooter from '../components/AppFooter';
-import AppNavbar from '~/components/AppNavbar.vue';
+// import AppNavbar from '~/components/AppNavbar.vue';
 
 export default {
   components: {
-    AppNavbar,
-    // AppNavbar1,
+    // AppNavbar,
+    AppNavbar1,
     AppFooter
   }
 
