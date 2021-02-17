@@ -31,13 +31,16 @@ export default {
 }
 
 * {
-  font-family: 'Audiowide', cursive;;
+  font-family: 'Audiowide', cursive;
 }
 
 .page-content {
-  margin-top: 100px
+  margin-top: $page-margin-top-mob;
 }
 
+h3 {
+  font-size: 1.2rem;
+}
 .sub-title {
   color: $ids-blue;
   margin: 0;
@@ -77,6 +80,10 @@ export default {
 }
 /* // Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
+
+  .page-content {
+    margin-top: $page-margin-top-desktop;
+  }
 
 }
 

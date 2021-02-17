@@ -20,7 +20,7 @@
                             </span>
                         </button>
                         <ul class="submenu">
-                            <li class="subitem"><nuxt-link to="#" exact>Project Feasibility Studies and Commercial Planning</nuxt-link></li>
+                            <li class="subitem"><nuxt-link to="/services#feasibility" exact>Project Feasibility Studies and Commercial Planning</nuxt-link></li>
                             <li class="subitem"><nuxt-link to="#" exact>Principle Designer Duties and Comprehensive HSE</nuxt-link></li>
                             <li class="subitem"><nuxt-link to="#" exact>Demolition Project Management</nuxt-link></li>
                             <li class="subitem"><nuxt-link to="#" exact>Explosive Demolition Management</nuxt-link></li>
@@ -146,6 +146,7 @@ body {
         width: 100%;
         overflow: hidden;
         transition: 0.3s ease-in;
+        background: white;
 
         #navbar1 {
             position: static;
@@ -265,6 +266,8 @@ body.home {
 
     #nav-row {
 
+        background: transparent;
+
         #navbar1 {
 
             #burger-menu {
@@ -344,6 +347,7 @@ body {
 
                     &:hover {
                         background: $ids-yellow;
+                        text-decoration: none;
                     }
 
                 }
@@ -369,6 +373,8 @@ body {
 
                             a {
                                 font-size: 10px;
+                                color: white;
+                                line-height: 0.8;
                             }
                         }
 
@@ -399,8 +405,26 @@ body {
 
 body.home {
 
-    #nav-row #navbar1 ul.nav-menu li a {
+    #nav-row #navbar1 ul.nav-menu li {
+        a {
         color: white;
+        // transition: 0s; NOT SURE ABOUT THIS ONE?
+        }
+    
+        &:hover {
+
+            a {
+            text-decoration: none;
+            color: $ids-blue;
+            transition: 0s;
+            }
+        }
+        &.item.has-submenu:hover {
+            button.submenu-toggle span i {
+                color: $ids-blue;
+                transition: 0s;
+            }
+        }
     }
 
     #nav-row {

@@ -25,7 +25,7 @@
           </div>
         </section>
         <!-- why choose IDS section  -->
-        <section id="why-ids" class=" container-fluid image-background-section">
+        <section id="why-ids" class="container-fluid image-background-section">
           <div class="row pt-5 pb-5 justify-content-center">
             <div class="col-12 col-md-10 pt-5 pb-5 test">
               <h2 class="sub-title">
@@ -41,7 +41,7 @@
         </section>
         <!-- experience section  -->
         <section class="container-fluid">
-          <div class="row pt-5 pb-5 justify-content-center ">
+          <div class="row pt-5 pb-5 justify-content-center">
             <div class="col-12 col-md-10 pt-5 pb-5">
               <h2 class="sub-title">
                 Our Experience

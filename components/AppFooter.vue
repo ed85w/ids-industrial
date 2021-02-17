@@ -1,13 +1,13 @@
 <template>
   <footer class="footer container-fluid">
     <div class="row justify-content-center">
-      <div class="col-12 col-lg-10 pt-5 pb-5">
+      <div class="col-12 col-lg-10 pt-3 pb-3 pt-md-5 pb-md-5">
         <div class="row">
-          <div class="col-12 col-sm-6 order-sm-2 text-center text-sm-right">
+          <div class="col-12 col-sm-6 order-sm-2 mb-3 mb-md-0 text-center text-sm-right">
             <img src="/img/ids-industrial-logo.png" alt="IDS industrial logo" class="footer-logo">
           </div>
           <div class="col-12 col-sm-6 order-sm-1 text-center text-sm-left">
-            <p>IDS Industrial:<br>
+            <p><span>IDS Industrial:</span><br>
             Parkhill Studio, Walton Road,<br>
             Wetherby, LS22 5DZ</p>
             <p>+44 7920 102357</p>
@@ -25,7 +25,7 @@ export default {
 }
 </script>
 
-<style lang="scss">
+<style scoped lang="scss">
 
 .footer.container-fluid {
   background: linear-gradient(rgba(0, 9, 92, 0.699), rgba(4, 17, 139, 0.699)), url('~static/img/oil-refinary-flexicoker.jpg'); 
@@ -35,12 +35,22 @@ export default {
   background-size: cover;
 
   img.footer-logo {
-    height: 70px;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 100px;
+
   }
 
   p {
     color: white;
     font-family: 'Lato', sans-serif;
+    font-size: 14px;
+    line-height: 1.3;
+
+    span {
+      font-family: 'Audiowide', cursive;
+    }
   }
 
 }
