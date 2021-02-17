@@ -1,12 +1,12 @@
 <template>
   <footer class="footer container-fluid">
     <div class="row justify-content-center">
-      <div class="col-12 col-lg-11">
+      <div class="col-12 col-lg-10 pt-5 pb-5">
         <div class="row">
-          <div class="col-12 col-lg-6 text-center">
+          <div class="col-12 col-sm-6 order-sm-2 text-center text-sm-right">
             <img src="/img/ids-industrial-logo.png" alt="IDS industrial logo" class="footer-logo">
           </div>
-          <div class="col-12 col-lg-6 text-center">
+          <div class="col-12 col-sm-6 order-sm-1 text-center text-sm-left">
             <p>IDS Industrial:<br>
             Parkhill Studio, Walton Road,<br>
             Wetherby, LS22 5DZ</p>

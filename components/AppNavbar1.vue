@@ -1,11 +1,11 @@
 <template>
     <div class="container-fluid" >
         <div id="nav-row" class="row" :class="{ scrolled : scrolled }">
-            <nav id="navbar1" class="col-12 col-lg-11 pt-0 pb-0 navbar test" :class="{ scrolled : scrolled, active: showMobileMenu }">
+            <nav id="navbar1" class="col-12 col-md-10 pt-0 pb-0 navbar" :class="{ scrolled : scrolled, active: showMobileMenu }">
                 <div class="logo">
                     <NuxtLink to="/" exact>
                         <div class="logo-container">
-                            <img class="logo" src="/img/ids-industrial-logo.png" alt="IDS Industrial Logo">
+                            <img class="logo" src="~static/img/ids-industrial-logo.png" alt="IDS Industrial Logo">
                         </div>
                     </NuxtLink>
                 </div>
@@ -145,6 +145,7 @@ body {
         top: 0;
         width: 100%;
         overflow: hidden;
+        transition: 0.3s ease-in;
 
         #navbar1 {
             position: static;
@@ -194,6 +195,11 @@ body {
                     margin: 0;
                     padding: 10px 10px;
 
+                    a {
+                        color: $ids-blue;
+                        transition: 0.3s ease-in;
+                    }
+
                     &.item.has-submenu {
                         display: flex;
                         justify-content: center;
@@ -218,6 +224,7 @@ body {
 
                             span i {
                                 color: $ids-blue;
+                                transition: 0.3s ease-in;
                             }
                         }
 
@@ -332,6 +339,7 @@ body {
 
                     a {
                         font-size: 14px;
+                        color: $ids-blue;
                     }
 
                     &:hover {
@@ -366,12 +374,12 @@ body {
 
                         // TRIANGLES 
                         // &::before {
-                        //     content: "^";
-                        //     background: transparent;
-                        //     position: relative;
-                        //     top: -22px;
-                        //     left: 37%;
-                        //     // transform: translateX(-50%);
+                            // content: "<i class='fas fa-caret-up'></i>";
+                            // background: transparent;
+                            // position: relative;
+                            // top: -22px;
+                            // left: 37%;
+                            // transform: translateX(-50%);
                         // }
                         
                     }
@@ -387,6 +395,30 @@ body {
     }
 }
 
+// homepage only styles 
+
+body.home {
+
+    #nav-row #navbar1 ul.nav-menu li a {
+        color: white;
+    }
+
+    #nav-row {
+
+        #navbar1 ul.nav-menu li.item.has-submenu button.submenu-toggle span i {
+            color: white;
+        }
+
+        &.scrolled #navbar1 ul.nav-menu li a {
+            color: $ids-blue;
+        }
+    
+
+        &.scrolled #navbar1 ul.nav-menu li.item.has-submenu button.submenu-toggle span i {
+            color: $ids-blue;
+        }
+    }
+}
 
 }
 

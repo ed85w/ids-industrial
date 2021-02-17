@@ -2,7 +2,7 @@
     <div class="wrapper page-content">
         <div class="container-fluid">
           <div class="row justify-content-center align-items-end pb-5 landing-home">
-            <div class="col-12 col-md-11 text-right pb-3 test">
+            <div class="col-12 col-md-10 text-right pb-3 test">
               <h1 class="m-0 pb-5">Sustainable, Decommissioning<br>& Demolition Management</h1>
               <h5 class="m-0 pb-5">Safe and cost-effective project management<br>from conception through to completion</h5>
               <button class="btn yellow-btn"><nuxt-link to="/services">Services</nuxt-link></button>
@@ -12,11 +12,11 @@
         <!-- about section  -->
         <section id="about" class="container-fluid">
           <div class="row pt-5 pb-5 justify-content-center ">
-            <div class="col-12 col-md-11 pt-5 pb-5">
+            <div class="col-12 col-md-10 pt-5 pb-5">
               <h2 class="sub-title">
                 About Us
               </h2>
-              <p class="body-text fw-bold">IDS Industrial is an internationally recognised decommissioning & demolition consultancy with extensive experience in high hazardous industries.</p>
+              <p class="body-text font-weight-bold">IDS Industrial is an internationally recognised decommissioning & demolition consultancy with extensive experience in high hazardous industries.</p>
               <p class="body-text">Our experienced team has been committed to providing total solutions for the safe, environmentally secure and cost-effective delivery of decommissioning, decontamination, dismantling and demolition projects worldwide.</p>
               <p class="body-text">We operate a ‘One Team, One Goal’ approach to projects where we strongly promote collaborative working between client, project team and contractor to deliver complex and challenging projects safely.</p>
               <p class="body-text">Our specialist industries include Manufacturing & Industrial, Oil & Gas, Power Generation, Petrochemical and Pharmaceutical.</p>
@@ -27,7 +27,7 @@
         <!-- why choose IDS section  -->
         <section id="why-ids" class=" container-fluid image-background-section">
           <div class="row pt-5 pb-5 justify-content-center">
-            <div class="col-12 col-md-11 pt-5 pb-5 test">
+            <div class="col-12 col-md-10 pt-5 pb-5 test">
               <h2 class="sub-title">
                 Why choose<br class="d-none d-lg-block"> IDS Industrial?
               </h2>
@@ -42,7 +42,7 @@
         <!-- experience section  -->
         <section class="container-fluid">
           <div class="row pt-5 pb-5 justify-content-center ">
-            <div class="col-12 col-md-11 pt-5 pb-5">
+            <div class="col-12 col-md-10 pt-5 pb-5">
               <h2 class="sub-title">
                 Our Experience
               </h2>
@@ -77,13 +77,6 @@ export default {
   destroyed () {
     document.body.classList.remove('home')
   }
-  // mounted () {
-  //   // add class to navbar to identify home page 
-  //   document.getElementById('nav-row').classList.add('home')
-  // },
-  // destroyed () {
-  //   document.getElementById('nav-row').classList.remove('home')
-  // }
 }
 </script>
 
@@ -139,8 +132,8 @@ div.wrapper {
 }
 
 
-/* desktop */
-@media (min-width: 992px) {
+/* tablets and above */
+@media (min-width: 768px) {
 
   div.wrapper {
     margin-top: 0;
