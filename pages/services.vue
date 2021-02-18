@@ -3,16 +3,16 @@
         <!-- landing  -->
         <div class="container-fluid image-background-section landing-services">
           <div class="row pt-5 pb-5 justify-content-center">
-            <div class="col-12 col-md-10 pt-3 pb-3 pt-md-5 pt-md-5 test">
+            <div class="col-12 col-md-10 col-lg-8 pt-3 pb-3 pt-md-5 pb-md-5 test">
               <h2 class="m-0 pb-5">Our Services</h2>
-              <p class="m-0 pb-5">IDS Industrial can provide a full suite of services to prospective clients to ensure all aspects of the project are accounted for, planned for and managed accordingly.</p>
+              <h5 class="m-0 pb-5">IDS Industrial can provide a full suite of services to prospective clients to ensure all aspects of the project are accounted for, planned for and managed accordingly.</h5>
             </div>
           </div>
         </div>
         <!-- feasibility section  -->
         <section id="feasibility" class="container-fluid">
           <div class="row pt-5 pb-5 justify-content-center ">
-            <div class="col-12 col-md-10 pt-3 pb-3 pt-md-5 pt-md-5">
+            <div class="col-12 col-md-10 col-lg-8 pt-3 pb-3 pt-md-5 pb-md-5">
               <h3 class="sub-title">
                 Project Feasibility Studies & Commercial Planning
               </h3>
@@ -25,7 +25,7 @@
         <!-- Principal Designer section  -->
         <section id="principal" class="container-fluid image-background-section">
           <div class="row pt-5 pb-5 justify-content-center ">
-            <div class="col-12 col-md-10 pt-3 pb-3 pt-md-5 pt-md-5">
+            <div class="col-12 col-md-10 col-lg-8 pt-3 pb-3 pt-md-5 pb-md-5">
               <h3 class="sub-title">
                 Principal Designer Duties & Comprehensive HSE Management
               </h3>
@@ -38,7 +38,7 @@
         <!-- demolition section  -->
         <section id="demolition" class="container-fluid">
           <div class="row pt-5 pb-5 justify-content-center">
-            <div class="col-12 col-md-10 pt-3 pb-3 pt-md-5 pt-md-5">
+            <div class="col-12 col-md-10 col-lg-8 pt-3 pb-3 pt-md-5 pb-md-5">
               <h3 class="sub-title">
                 Demolition Project Management
               </h3>
@@ -51,51 +51,51 @@
         <!-- explosive-demolition section  -->
         <section id="explosive-demolition" class="container-fluid image-background-section">
           <div class="row pt-5 pb-5 justify-content-center ">
-            <div class="col-12 col-md-10 pt-3 pb-3 pt-md-5 pt-md-5">
+            <div class="col-12 col-md-10 col-lg-8 pt-3 pb-3 pt-md-5 pb-md-5">
               <h3 class="sub-title">
-                Project Feasibility Studies & Commercial Planning
+                Explosive Demolition Management
               </h3>
-              <p class="body-text font-weight-bold">We have 35 years’ in-house experience of managing complex decommissioning & demolition projects from Nuclear Sites to City Centre Demolition.</p>
-              <p class="body-text">cialist services for decommissioning, dismantling and demolition.</p>
+              <p class="body-text">We have in-house experience of managing the planning and execution phases of explosive events, from City Centre blasting through to blasting within Power Stations and Oil Refineries.</p>
+              <p class="body-text">IDS can engage with specialist explosive engineers and work with them to manage the process from start to finish.</p>
               <button class="btn yellow-btn mt-4"><nuxt-link to="/contact">Contact</nuxt-link></button>
             </div>
           </div>
         </section>
-        <!-- feasibility section  -->
-        <section id="feasibility" class="container-fluid">
+        <!-- temporary-works section  -->
+        <section id="temporary-works" class="container-fluid">
           <div class="row pt-5 pb-5 justify-content-center ">
-            <div class="col-12 col-md-10 pt-3 pb-3 pt-md-5 pt-md-5">
+            <div class="col-12 col-md-10 col-lg-8 pt-3 pb-3 pt-md-5 pb-md-5">
               <h3 class="sub-title">
-                Project Feasibility Studies & Commercial Planning
+                Temporary Works Management
               </h3>
-              <p class="body-text">IDS can provide clients with early assessments of projects, provide budgeting advice and assist with any outline engagement with stakeholders and local authorities.</p>
-              <p class="body-text">We can also assist in the procurement of specialist services for decommissioning, dismantling and demolition.</p>
+              <p class="body-text font-weight-bold">Temporary works management in demolition is often overlooked. It is a fundamental aspect of any technical demolition project from pre-weakening, to propping, to explosive demolition.</p>
+              <p class="body-text">Each stage of the project needs temporary work advice and management and this is something IDS can oversee and ensure that compliance with BS5975 is adhered to.</p>
               <button class="btn yellow-btn mt-4"><nuxt-link to="/contact">Contact</nuxt-link></button>
             </div>
           </div>
         </section>
-        <!-- feasibility section  -->
-        <section id="feasibility" class="container-fluid">
+        <!-- structural-engineering section  -->
+        <section id="structural-engineering" class="container-fluid image-background-section">
           <div class="row pt-5 pb-5 justify-content-center ">
-            <div class="col-12 col-md-10 pt-3 pb-3 pt-md-5 pt-md-5">
+            <div class="col-12 col-md-10 col-lg-8 pt-3 pb-3 pt-md-5 pb-md-5">
               <h3 class="sub-title">
-                Project Feasibility Studies & Commercial Planning
+                Structural Engineering
               </h3>
-              <p class="body-text">IDS can provide clients with early assessments of projects, provide budgeting advice and assist with any outline engagement with stakeholders and local authorities.</p>
-              <p class="body-text">We can also assist in the procurement of specialist services for decommissioning, dismantling and demolition.</p>
+              <p class="body-text">IDS can assist clients in the planning of demolition projects and provide detailed structural assessments of existing structures to assist demolition contractors in deciding on suitable methods of demolition.</p>
+              <p class="body-text">The existing stability of a structure is often overlooked during demolition planning and can lead to an increased project risk, increased commercial risk and the appointment of an unsuitable contractor.</p>
               <button class="btn yellow-btn mt-4"><nuxt-link to="/contact">Contact</nuxt-link></button>
             </div>
           </div>
         </section>
-        <!-- feasibility section  -->
-        <section id="feasibility" class="container-fluid">
+        <!-- remediation section  -->
+        <section id="remediation" class="container-fluid">
           <div class="row pt-5 pb-5 justify-content-center ">
-            <div class="col-12 col-md-10 pt-3 pb-3 pt-md-5 pt-md-5">
+            <div class="col-12 col-md-10 col-lg-8 pt-3 pb-3 pt-md-5 pb-md-5">
               <h3 class="sub-title">
-                Project Feasibility Studies & Commercial Planning
+                Remediation Management
               </h3>
-              <p class="body-text">IDS can provide clients with early assessments of projects, provide budgeting advice and assist with any outline engagement with stakeholders and local authorities.</p>
-              <p class="body-text">We can also assist in the procurement of specialist services for decommissioning, dismantling and demolition.</p>
+              <p class="body-text font-weight-bold">The cost to remediate land can be extensive. Early engagement with specialists can reduce commercial risk of a project greatly.</p>
+              <p class="body-text">IDS can manage this engagement as part of our offering to ensure that costs are reduced wherever possible.</p>
               <button class="btn yellow-btn mt-4"><nuxt-link to="/contact">Contact</nuxt-link></button>
             </div>
           </div>
@@ -111,7 +111,9 @@ export default {
 
 <style lang="scss">
 
-
+h5 {
+  font-family: 'Lato', sans-serif;
+}
 
 
 .image-background-section {
@@ -122,9 +124,9 @@ export default {
     background-size: cover;
 
     p {
-        font-family: 'Lato', sans-serif;
-        color: white;
-        max-width: 100%;
+      font-family: 'Lato', sans-serif;
+      color: white;
+      max-width: 100%;
     }
 
     h3.sub-title {
@@ -133,12 +135,22 @@ export default {
 }
 
 .landing-services {
-    background: linear-gradient(rgba(0, 9, 92, 0.2), rgba(4, 17, 139, 0.2)), url('~static/img/eggborough-power-station.jpg') center center / cover no-repeat;
+    background: linear-gradient(rgba($ids-blue, 0.2), rgba($ids-blue, 0.2)), url('~static/img/eggborough-power-station.jpg') center center / cover no-repeat;
 }
 
 #principal {
-    background: linear-gradient(rgba(0, 9, 92, 0.2), rgba(4, 17, 139, 0.2)), url('~static/img/sarens-crane.jpeg') center 80% / cover no-repeat;
+    background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('~static/img/sarens-crane.jpeg') center 80% / cover no-repeat;
 }
+
+#explosive-demolition {
+    background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('~static/img/eggborough-landscape.jpg') center center / cover no-repeat;
+}
+
+#structural-engineering {
+    background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('~static/img/dortmund-steel.jpg') center 80% / cover no-repeat;
+}
+
+
 
 
 /* tablets and above */

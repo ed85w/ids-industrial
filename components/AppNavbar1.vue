@@ -1,7 +1,7 @@
 <template>
     <div class="container-fluid" >
         <div id="nav-row" class="row" :class="{ scrolled : scrolled }">
-            <nav id="navbar1" class="col-12 col-md-10 pt-0 pb-0 navbar" :class="{ scrolled : scrolled, active: showMobileMenu }">
+            <nav id="navbar1" class="col-12 col-md-10 col-lg-8 pt-0 pb-0 navbar" :class="{ scrolled : scrolled, active: showMobileMenu }">
                 <div class="logo">
                     <NuxtLink to="/" exact>
                         <div class="logo-container">
@@ -21,12 +21,12 @@
                         </button>
                         <ul class="submenu">
                             <li class="subitem"><nuxt-link to="/services#feasibility" exact>Project Feasibility Studies and Commercial Planning</nuxt-link></li>
-                            <li class="subitem"><nuxt-link to="#" exact>Principle Designer Duties and Comprehensive HSE</nuxt-link></li>
-                            <li class="subitem"><nuxt-link to="#" exact>Demolition Project Management</nuxt-link></li>
-                            <li class="subitem"><nuxt-link to="#" exact>Explosive Demolition Management</nuxt-link></li>
-                            <li class="subitem"><nuxt-link to="#" exact>Temporary Works Management</nuxt-link></li>
-                            <li class="subitem"><nuxt-link to="#" exact>Structural Engineering</nuxt-link></li>
-                            <li class="subitem"><nuxt-link to="#" exact>Remediation Management</nuxt-link></li>
+                            <li class="subitem"><nuxt-link to="/services#principal" exact>Principle Designer Duties and Comprehensive HSE</nuxt-link></li>
+                            <li class="subitem"><nuxt-link to="/services#demolition" exact>Demolition Project Management</nuxt-link></li>
+                            <li class="subitem"><nuxt-link to="/services#explosive-demolition" exact>Explosive Demolition Management</nuxt-link></li>
+                            <li class="subitem"><nuxt-link to="/services#temporary-works" exact>Temporary Works Management</nuxt-link></li>
+                            <li class="subitem"><nuxt-link to="/services#structural-engineering" exact>Structural Engineering</nuxt-link></li>
+                            <li class="subitem"><nuxt-link to="/services#remediation" exact>Remediation Management</nuxt-link></li>
                         </ul>
                     </li>
                     <!-- end of item with subitems  -->
@@ -39,11 +39,11 @@
                             </span>
                         </button>
                         <ul class="submenu">
-                            <li class="subitem"><nuxt-link to="#" exact>Manufacturing and Industrial</nuxt-link></li>
-                            <li class="subitem"><nuxt-link to="#" exact>Oil and Gas</nuxt-link></li>
-                            <li class="subitem"><nuxt-link to="#" exact>Power Generation</nuxt-link></li>
-                            <li class="subitem"><nuxt-link to="#" exact>Petrochemical</nuxt-link></li>
-                            <li class="subitem"><nuxt-link to="#" exact>Pharmaceutical</nuxt-link></li>
+                            <li class="subitem"><nuxt-link to="/industries#manufacturing" exact>Manufacturing and Industrial</nuxt-link></li>
+                            <li class="subitem"><nuxt-link to="/industries#oil-and-gas" exact>Oil and Gas</nuxt-link></li>
+                            <li class="subitem"><nuxt-link to="/industries#power-generation" exact>Power Generation</nuxt-link></li>
+                            <li class="subitem"><nuxt-link to="/industries#petrochemical" exact>Petrochemical</nuxt-link></li>
+                            <li class="subitem"><nuxt-link to="/industries#pharmaceutical" exact>Pharmaceutical</nuxt-link></li>
                         </ul>
                     </li>
                     <!-- end of item with subitems  -->
@@ -211,8 +211,7 @@ body {
                             width: 100%;
                             display: block;
                             list-style: none;
-                            text-align: left;
-                            // background: 
+                            // text-align: left;
                             transition: 0.5s ease;
                             height: 0;
                             transition: max-height 0.5s ease;
@@ -241,7 +240,7 @@ body {
                             }
 
                             button.submenu-toggle span i {
-                                color: $ids-yellow;
+                                // color: $ids-yellow;
                             }
                         }
                     }
@@ -336,11 +335,11 @@ body {
                 // nav item styling 
                 li {
                     width: auto;
-                    margin: 0 5px;
-                    padding: 5px;
+                    margin: 0 1rem;
                     text-align: center;
 
                     a {
+                    padding: 5px;
                         font-size: 14px;
                         color: $ids-blue;
                     }
@@ -370,23 +369,31 @@ body {
 
                         li {
                             background: $ids-blue;
+                            line-height: 1;
+                            padding: 10px 5px;
+                            background: #2a4b9beb;
+                            border-top: 3px solid #2a4b9b;
 
                             a {
-                                font-size: 10px;
                                 color: white;
-                                line-height: 0.8;
                             }
                         }
 
                         // TRIANGLES 
-                        // &::before {
-                            // content: "<i class='fas fa-caret-up'></i>";
-                            // background: transparent;
-                            // position: relative;
-                            // top: -22px;
-                            // left: 37%;
+                        &::before {
+                            content: "";
+                            background: transparent;
+                            position: relative;
+                            pointer-events: none;
+                            width: 0; 
+                            height: 0; 
+                            border-left: 20px solid transparent;
+                            border-right: 20px solid transparent;
+                            border-bottom: 25px solid $ids-blue;
+                            top: -22px;
+                            // left: 50%;
                             // transform: translateX(-50%);
-                        // }
+                        }
                         
                     }
 

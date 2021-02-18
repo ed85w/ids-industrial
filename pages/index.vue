@@ -2,7 +2,7 @@
     <div class="wrapper page-content">
         <div class="container-fluid">
           <div class="row justify-content-center align-items-end pb-5 landing-home">
-            <div class="col-12 col-md-10 text-right pb-3 test">
+            <div class="col-12 col-md-10 col-lg-8 text-right pb-3 test">
               <h1 class="m-0 pb-5">Sustainable, Decommissioning<br>& Demolition Management</h1>
               <h5 class="m-0 pb-5">Safe and cost-effective project management<br>from conception through to completion</h5>
               <button class="btn yellow-btn"><nuxt-link to="/services">Services</nuxt-link></button>
@@ -12,7 +12,7 @@
         <!-- about section  -->
         <section id="about" class="container-fluid">
           <div class="row pt-5 pb-5 justify-content-center ">
-            <div class="col-12 col-md-10 pt-5 pb-5">
+            <div class="col-12 col-md-10 col-lg-8 pt-5 pb-5">
               <h2 class="sub-title">
                 About Us
               </h2>
@@ -27,7 +27,7 @@
         <!-- why choose IDS section  -->
         <section id="why-ids" class="container-fluid image-background-section">
           <div class="row pt-5 pb-5 justify-content-center">
-            <div class="col-12 col-md-10 pt-5 pb-5 test">
+            <div class="col-12 col-md-10 col-lg-8 pt-5 pb-5 test">
               <h2 class="sub-title">
                 Why choose<br class="d-none d-lg-block"> IDS Industrial?
               </h2>
@@ -42,7 +42,7 @@
         <!-- experience section  -->
         <section class="container-fluid">
           <div class="row pt-5 pb-5 justify-content-center">
-            <div class="col-12 col-md-10 pt-5 pb-5">
+            <div class="col-12 col-md-10 col-lg-8 pt-5 pb-5">
               <h2 class="sub-title">
                 Our Experience
               </h2>
