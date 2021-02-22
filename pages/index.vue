@@ -2,12 +2,25 @@
     <div class="wrapper page-content">
         <div class="container-fluid">
           <div class="row justify-content-center align-items-end pb-5 landing-home">
-            <div class="carousel-container">
-              <img src="~static/img/power-station-carousel.jpeg" alt="" class="carousel-img" v-if="activeSlide = 0">
-              <img src="~static/img/teeside-carousel.jpg" alt="" class="carousel-img teeside">
-              <img src="~static/img/greece-carousel.jpeg" alt="" class="carousel-img">
-            </div>
-            <div class="col-12 col-md-10 col-lg-8 text-right pb-3">
+            <b-carousel
+              id="carousel-fade"
+              style="text-shadow: 0px 0px 2px #000"
+              fade
+            >
+              <b-carousel-slide
+                img-src="~static/img/power-station-carousel.jpeg"
+                class="carousel-img"
+              ></b-carousel-slide>
+              <b-carousel-slide
+                img-src="~static/img/greece-carousel.jpeg"
+                class="carousel-img"
+              ></b-carousel-slide>
+              <b-carousel-slide
+                img-src="~static/img/teeside-carousel.jpg"
+                class="carousel-img"
+              ></b-carousel-slide>
+            </b-carousel>
+            <div id="carousel-overlay" class="col-12 col-md-10 col-lg-8 text-right pb-3">
               <h1 class="m-0 pb-5">Sustainable, Decommissioning<br>& Demolition Management</h1>
               <h5 class="m-0 pb-5">Safe and cost-effective project management<br>from conception through to completion</h5>
               <button class="btn yellow-btn"><nuxt-link to="/services">Services</nuxt-link></button>
@@ -64,52 +77,42 @@
 <script>
 export default {
   data() {
-    return {
-      activeSlide: 0,
-    }
-  },
-  head(){
-    return {
-      title: 'IDS Industrial | Home',
-      meta: [
-        {
-          hid: 'description', //id
-          name: 'description', //meta type
-          content: 'PUT DESCRIPTION HERE' //meta content
-        }
-      ]
-    };
-  },
-  methods: {
-    doStuff: function(){
-      setInterval(function(){ 
-        if(this.activeSlide < 2 ){
-          this.activeSlide += 1
-        } else {
-          this.activeSlide = 0
-        }
-        console.log(this.activeSlide)
-
-      }, 3000);
-    }
-  },
-  mounted () {
-    // add class to navbar to identify home page 
-    document.body.classList.add('home')
-    // this.imageLoop();
-    this.doStuff();
-  },
-  destroyed () {
-    document.body.classList.remove('home')
-  },
-  created() {
-    // loop through slide images 
-  }
+      return {
+        slide: 0,
+        sliding: null
+      }
+    },
+    methods: {
+      onSlideStart(slide) {
+        this.sliding = true
+      },
+      onSlideEnd(slide) {
+        this.sliding = false
+      }
+    },
+    head(){
+      return {
+        title: 'IDS Industrial | Home',
+        meta: [
+          {
+            hid: 'description', //id
+            name: 'description', //meta type
+            content: 'PUT DESCRIPTION HERE' //meta content
+          }
+        ]
+      };
+    },
+    mounted () {
+      // add class to navbar to identify home page 
+      document.body.classList.add('home')
+    },
+    destroyed () {
+      document.body.classList.remove('home')
+    },
 }
 </script>
 
-<style scoped lang="scss">
-
+<style lang="scss">
 
 div.wrapper {
   margin-top: 0;
@@ -121,46 +124,31 @@ div.wrapper {
       position: relative;
       height: 60vh;
       min-height: 480px;
-      // background: url('~static/img/power-station-carousel.jpeg') no-repeat center center; 
-      // -webkit-background-size: cover;
-      // -moz-background-size: cover;
-      // -o-background-size: cover;
-      // background-size: cover;
       color: white;
 
-      .carousel-container {
-          position: absolute;
-          top: 0;
-          left:0;
-          width: 100%;
+      #carousel-fade {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+
+        .carousel-inner,
+        .carousel-item {
           height: 100%;
-          overflow: hidden;
-          
-          img {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            transition: 1s ease;
-
-            &.carousel-img {
-              // opacity: 0;
-
-              &.teeside {
-                object-position: 20% 30%;
-              }
-
-              &.active-slide {
-                opacity: 1;
-              }
-            }
-          }
-
-
         }
 
+
+          img.img-fluid {
+            height: 100%;
+            object-fit: cover;
+          }
+      }
+
+      #carousel-overlay {
+        z-index: 999;
+
+      }
       h1 {
         font-size: 4.8vw
       }
@@ -169,6 +157,7 @@ div.wrapper {
         font-family: 'Lato', sans-serif;
         font-size: 3.7vw;
       }
+
 
     }
   }
