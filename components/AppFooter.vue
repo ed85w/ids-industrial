@@ -10,8 +10,9 @@
             <p><span>IDS Industrial:</span><br>
             Parkhill Studio, Walton Road,<br>
             Wetherby, LS22 5DZ</p>
-            <p>+44 7920 102357</p>
-            <p>dave@idsndustrial.co.uk</p>
+            <p><a href="tel:+44 7920 102357">+44 7920 102357</a></p>
+            <p><a href="mailto:dave@idsindustrial.co.uk">dave@idsindustrial.co.uk</a><br>
+            <a href="mailto:ian@idsindustrial.co.uk">ian@idsindustrial.co.uk</a></p>
           </div>
         </div>
       </div>
@@ -47,6 +48,16 @@ export default {
     font-family: 'Lato', sans-serif;
     font-size: 14px;
     line-height: 1.3;
+    
+    a {
+      font-family: 'Lato', sans-serif;
+      color: white;
+
+      &:hover {
+        text-decoration: none;
+        color: $ids-yellow;
+      }
+    }
 
     span {
       font-family: 'Audiowide', cursive;

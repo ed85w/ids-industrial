@@ -1,11 +1,11 @@
 <template>
     <div class="container-fluid" >
         <div id="nav-row" class="row" :class="{ scrolled : scrolled }">
-            <nav id="navbar1" class="col-12 col-lg-11 pt-0 pb-0 navbar navbar-fixed-top test" :class="{ scrolled : scrolled }">
+            <nav id="navbar1" class="col-12 col-md-10 col-lg-8 pt-0 pb-0 navbar" :class="{ scrolled : scrolled, active: showMobileMenu }">
                 <div class="logo">
                     <NuxtLink to="/" exact>
                         <div class="logo-container">
-                            <img class="logo" src="/img/ids-industrial-logo.png" alt="IDS Industrial Logo">
+                            <img class="logo" src="~static/img/ids-industrial-logo.png" alt="IDS Industrial Logo">
                         </div>
                     </NuxtLink>
                 </div>
@@ -20,13 +20,13 @@
                             </span>
                         </button>
                         <ul class="submenu">
-                            <li class="subitem"><nuxt-link to="#" exact>Project Feasibility Studies and Commercial Planning</nuxt-link></li>
-                            <li class="subitem"><nuxt-link to="#" exact>Principle Designer Duties and Comprehensive HSE</nuxt-link></li>
-                            <li class="subitem"><nuxt-link to="#" exact>Demolition Project Management</nuxt-link></li>
-                            <li class="subitem"><nuxt-link to="#" exact>Explosive Demolition Management</nuxt-link></li>
-                            <li class="subitem"><nuxt-link to="#" exact>Temporary Works Management</nuxt-link></li>
-                            <li class="subitem"><nuxt-link to="#" exact>Structural Engineering</nuxt-link></li>
-                            <li class="subitem"><nuxt-link to="#" exact>Remediation Management</nuxt-link></li>
+                            <li class="subitem"><nuxt-link to="/services#feasibility" exact>Project Feasibility Studies and Commercial Planning</nuxt-link></li>
+                            <li class="subitem"><nuxt-link to="/services#principal" exact>Principle Designer Duties and Comprehensive HSE</nuxt-link></li>
+                            <li class="subitem"><nuxt-link to="/services#demolition" exact>Demolition Project Management</nuxt-link></li>
+                            <li class="subitem"><nuxt-link to="/services#explosive-demolition" exact>Explosive Demolition Management</nuxt-link></li>
+                            <li class="subitem"><nuxt-link to="/services#temporary-works" exact>Temporary Works Management</nuxt-link></li>
+                            <li class="subitem"><nuxt-link to="/services#structural-engineering" exact>Structural Engineering</nuxt-link></li>
+                            <li class="subitem"><nuxt-link to="/services#remediation" exact>Remediation Management</nuxt-link></li>
                         </ul>
                     </li>
                     <!-- end of item with subitems  -->
@@ -39,17 +39,17 @@
                             </span>
                         </button>
                         <ul class="submenu">
-                            <li class="subitem"><nuxt-link to="#" exact>Manufacturing and Industrial</nuxt-link></li>
-                            <li class="subitem"><nuxt-link to="#" exact>Oil and Gas</nuxt-link></li>
-                            <li class="subitem"><nuxt-link to="#" exact>Power Generation</nuxt-link></li>
-                            <li class="subitem"><nuxt-link to="#" exact>Petrochemical</nuxt-link></li>
-                            <li class="subitem"><nuxt-link to="#" exact>Pharmaceutical</nuxt-link></li>
+                            <li class="subitem"><nuxt-link to="/industries#manufacturing" exact>Manufacturing and Industrial</nuxt-link></li>
+                            <li class="subitem"><nuxt-link to="/industries#oil-and-gas" exact>Oil and Gas</nuxt-link></li>
+                            <li class="subitem"><nuxt-link to="/industries#power-generation" exact>Power Generation</nuxt-link></li>
+                            <li class="subitem"><nuxt-link to="/industries#petrochemical" exact>Petrochemical</nuxt-link></li>
+                            <li class="subitem"><nuxt-link to="/industries#pharmaceutical" exact>Pharmaceutical</nuxt-link></li>
                         </ul>
                     </li>
                     <!-- end of item with subitems  -->
                     <li><nuxt-link to="contact" exact>Contact</nuxt-link></li>
                 </ul>
-                <button id="burger-menu" aria-expanded="false" v-on:click="toggleMenu()">
+                <button id="burger-menu" :aria-expanded="showMobileMenu ? 'true' : 'false'" @click="showMobileMenu = !showMobileMenu">
                     <div class="burger-line"></div>
                     <div class="burger-line"></div>
                     <div class="burger-line"></div>
@@ -64,40 +64,18 @@ export default {
     data() {
         return {
             scrolled: false,
+            showMobileMenu: false
         }
     },
     methods: {
-        toggleMenu: function() {
-            const menu = document.querySelector("#navbar1");
-            const burgerMenu = document.querySelector("#burger-menu");
-            const submenuItems = document.querySelectorAll(".has-submenu");
-            if (menu.classList.contains("active")) {
-                menu.classList.remove("active");
-                burgerMenu.setAttribute("aria-expanded", false);
-                // remove active subitem class (if active)
-                for (var item of submenuItems){
-                    if (item.classList.contains("submenu-active")){
-                        item.classList.remove("submenu-active");
-                        console.log(item)
-                    }
-                }
-            } else {
-                menu.classList.add("active");
-                burgerMenu.setAttribute("aria-expanded", true);
-            }
-        },
         onResize(e) {
-            const menu = document.querySelector("#navbar1");
-            const burgerMenu = document.querySelector("#burger-menu");
             const submenuItems = document.querySelectorAll(".has-submenu");
-            if(window.innerWidth > 991 && menu.classList.contains("active")) {
-                menu.classList.remove("active");
-                burgerMenu.setAttribute("aria-expanded", false);
+            if(window.innerWidth > 991 && this.showMobileMenu == true) {
+                this.showMobileMenu = false;
                 // remove active subitem class (if active)
                 for (var item of submenuItems){
                     if (item.classList.contains("submenu-active")){
                         item.classList.remove("submenu-active");
-                        console.log(item)
                     }
                 }
             }   
@@ -107,7 +85,6 @@ export default {
             const menu = document.querySelector("#navbar1");
             // on close (no other submenu open)
             if (btn.currentTarget.parentNode.classList.contains("submenu-active")) {
-                console.log("1");
                 btn.currentTarget.parentNode.classList.remove("submenu-active");
                 btn.currentTarget.setAttribute("aria-expanded", false);
             } else if (menu.querySelector(".submenu-active")) {
@@ -121,7 +98,6 @@ export default {
                 btn.currentTarget.setAttribute("aria-expanded", true);
             } else {
             // on normal open (no other submenu open)
-                console.log("3");
                 btn.currentTarget.parentNode.classList.add("submenu-active");
                 btn.currentTarget.setAttribute("aria-expanded", true);
             }
@@ -147,35 +123,14 @@ export default {
     },
     // toggleMenu on page change (remove menu) 
     watch:{
-    $route (to, from){
-        if(window.innerWidth < 992){
-            const menu = document.querySelector("#navbar1");
-            const burgerMenu = document.querySelector("#burger-menu");
-            const submenuItems = document.querySelectorAll(".has-submenu");
-            if (menu.classList.contains("active")) {
-                menu.classList.remove("active");
-                burgerMenu.setAttribute("aria-expanded", false);
-                // remove active subitem class (if active)
-                for (var item of submenuItems){
-                    if (item.classList.contains("submenu-active")){
-                        item.classList.remove("submenu-active");
-                        console.log(item)
-                    }
-                }
+        $route (to, from){
+            const navMenu = document.querySelector('ul.nav-menu');
+            this.showMobileMenu = false;
+            if (navMenu.querySelector(".submenu-active")){
+                navMenu.querySelector(".submenu-active").classList.remove("submenu-active")
             }
-            
-        } else {
-            const menu = document.querySelector("#navbar1");
-            const toggleBtns = menu.querySelectorAll("button.submenu-toggle")
-            for (let togBtn of toggleBtns) {
-                togBtn.setAttribute("aria-expanded", false);
-            }
-            if(menu.querySelector(".submenu-active")){
-                menu.querySelector(".submenu-active").classList.remove("submenu-active");
-            }
-        }
+        } 
     }
-} 
 }
 </script>
 
@@ -190,9 +145,13 @@ body {
         top: 0;
         width: 100%;
         overflow: hidden;
+        transition: 0.3s ease-in;
+        background: white;
 
         #navbar1 {
-            position: static;
+            // position: static;
+            max-height: 100vh;
+            overflow: scroll;
 
             img.logo {
                 height: 70px;
@@ -239,6 +198,11 @@ body {
                     margin: 0;
                     padding: 10px 10px;
 
+                    a {
+                        color: $ids-blue;
+                        transition: 0.3s ease-in;
+                    }
+
                     &.item.has-submenu {
                         display: flex;
                         justify-content: center;
@@ -249,8 +213,7 @@ body {
                             width: 100%;
                             display: block;
                             list-style: none;
-                            text-align: left;
-                            // background: 
+                            // text-align: left;
                             transition: 0.5s ease;
                             height: 0;
                             transition: max-height 0.5s ease;
@@ -261,8 +224,15 @@ body {
                             background: transparent;
                             border: none;
 
+                            &:focus {
+                                outline: -webkit-focus-ring-color auto 1px;
+                            }
+
                             span i {
+                                padding-top: 8px;
+                                padding-bottom: 8px;
                                 color: $ids-blue;
+                                transition: 0.3s ease-in;
                             }
                         }
 
@@ -278,7 +248,7 @@ body {
                             }
 
                             button.submenu-toggle span i {
-                                color: $ids-yellow;
+                                // color: $ids-yellow;
                             }
                         }
                     }
@@ -302,6 +272,8 @@ body {
 body.home {
 
     #nav-row {
+
+        background: transparent;
 
         #navbar1 {
 
@@ -371,12 +343,19 @@ body {
                 // nav item styling 
                 li {
                     width: auto;
-                    margin: 0 5px;
-                    padding: 5px;
+                    margin: 0 1rem;
+                    padding: 1px;
                     text-align: center;
 
                     a {
+                        display: block;
+                        padding: 5px;
                         font-size: 14px;
+                        color: $ids-blue;
+
+                        &:hover {
+                            text-decoration: none;
+                        }
                     }
 
                     &:hover {
@@ -403,19 +382,29 @@ body {
 
                         li {
                             background: $ids-blue;
+                            line-height: 1;
+                            padding: 10px 5px;
+                            background: #2a4b9beb;
+                            border-top: 3px solid #2a4b9b;
 
                             a {
-                                font-size: 10px;
+                                color: white;
                             }
                         }
 
                         // TRIANGLES 
                         &::before {
-                            content: "^";
+                            content: "";
                             background: transparent;
                             position: relative;
+                            pointer-events: none;
+                            width: 0; 
+                            height: 0; 
+                            border-left: 20px solid transparent;
+                            border-right: 20px solid transparent;
+                            border-bottom: 25px solid $ids-blue;
                             top: -22px;
-                            left: 37%;
+                            // left: 50%;
                             // transform: translateX(-50%);
                         }
                         
@@ -432,6 +421,48 @@ body {
     }
 }
 
+// homepage only styles 
+
+body.home {
+
+    #nav-row #navbar1 ul.nav-menu li {
+        a {
+        color: white;
+        // transition: 0s; NOT SURE ABOUT THIS ONE?
+        }
+    
+        &:hover {
+
+            a {
+            text-decoration: none;
+            color: $ids-blue;
+            transition: 0s;
+            }
+        }
+        &.item.has-submenu:hover {
+            button.submenu-toggle span i {
+                color: $ids-blue;
+                transition: 0s;
+            }
+        }
+    }
+
+    #nav-row {
+
+        #navbar1 ul.nav-menu li.item.has-submenu button.submenu-toggle span i {
+            color: white;
+        }
+
+        &.scrolled #navbar1 ul.nav-menu li a {
+            color: $ids-blue;
+        }
+    
+
+        &.scrolled #navbar1 ul.nav-menu li.item.has-submenu button.submenu-toggle span i {
+            color: $ids-blue;
+        }
+    }
+}
 
 }
 

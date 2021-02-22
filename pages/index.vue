@@ -2,7 +2,12 @@
     <div class="wrapper page-content">
         <div class="container-fluid">
           <div class="row justify-content-center align-items-end pb-5 landing-home">
-            <div class="col-12 col-md-10 col-lg-8 text-right pb-3 test">
+            <div class="carousel-container">
+              <img src="~static/img/power-station-carousel.jpeg" alt="" class="carousel-img">
+              <img src="~static/img/teeside-carousel.jpg" alt="" class="carousel-img teeside">
+              <img src="~static/img/greece-carousel.jpeg" alt="" class="carousel-img">
+            </div>
+            <div class="col-12 col-md-10 col-lg-8 text-right pb-3">
               <h1 class="m-0 pb-5">Sustainable, Decommissioning<br>& Demolition Management</h1>
               <h5 class="m-0 pb-5">Safe and cost-effective project management<br>from conception through to completion</h5>
               <button class="btn yellow-btn"><nuxt-link to="/services">Services</nuxt-link></button>
@@ -27,7 +32,7 @@
         <!-- why choose IDS section  -->
         <section id="why-ids" class="container-fluid image-background-section">
           <div class="row pt-5 pb-5 justify-content-center">
-            <div class="col-12 col-md-10 col-lg-8 pt-5 pb-5 test">
+            <div class="col-12 col-md-10 col-lg-8 pt-5 pb-5">
               <h2 class="sub-title">
                 Why choose<br class="d-none d-lg-block"> IDS Industrial?
               </h2>
@@ -70,13 +75,14 @@ export default {
       ]
     };
   },
+
   mounted () {
     // add class to navbar to identify home page 
     document.body.classList.add('home')
   },
   destroyed () {
     document.body.classList.remove('home')
-  }
+  },
 }
 </script>
 
@@ -90,14 +96,44 @@ div.wrapper {
     height: 100%;
 
     .row.landing-home {
+      position: relative;
       height: 60vh;
       min-height: 480px;
-      background: url('~static/img/power-station-carousel.jpeg') no-repeat center center; 
-      -webkit-background-size: cover;
-      -moz-background-size: cover;
-      -o-background-size: cover;
-      background-size: cover;
+      // background: url('~static/img/power-station-carousel.jpeg') no-repeat center center; 
+      // -webkit-background-size: cover;
+      // -moz-background-size: cover;
+      // -o-background-size: cover;
+      // background-size: cover;
       color: white;
+
+      .carousel-container {
+          position: absolute;
+          top: 0;
+          left:0;
+          width: 100%;
+          height: 100%;
+          overflow: hidden;
+          
+          img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+
+            &.carousel-img {
+              // opacity: 0;
+
+              &.teeside {
+                object-position: 20% 30%;
+              }
+
+              &.active-slide {
+                opacity: 1;
+              }
+            }
+          }
+
+
+        }
 
       h1 {
         font-size: 4.8vw
@@ -118,7 +154,7 @@ div.wrapper {
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-
+  
     h2 {
       color: white;
     }
@@ -141,6 +177,7 @@ div.wrapper {
     .container-fluid {
       
       .row.landing-home {
+
         height: 100vh;
         min-height: 500px;
         margin-top: 0;

@@ -1,7 +1,6 @@
 <template>
   <div>
-    <AppNavbar1 />
-    <!-- <AppNavbar/> -->
+    <AppNavbar/>
     <Nuxt />
     <AppFooter />
   </div>
@@ -9,14 +8,12 @@
 
 <script>
 
-import AppNavbar1 from '../components/AppNavbar1';
 import AppFooter from '../components/AppFooter';
-// import AppNavbar from '~/components/AppNavbar.vue';
+import AppNavbar from '~/components/AppNavbar.vue';
 
 export default {
   components: {
-    // AppNavbar,
-    AppNavbar1,
+    AppNavbar,
     AppFooter
   }
 
@@ -48,7 +45,7 @@ h3 {
 }
 
 .body-text {
-  color: gray;
+  color: $ids-grey;
   font-family: 'Lato', sans-serif;
   font-size: 0.9rem;
 }
@@ -72,6 +69,24 @@ h3 {
     }
 
   }
+}
+
+.image-background-section {
+    color: white;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+
+    p {
+      font-family: 'Lato', sans-serif;
+      color: white;
+      max-width: 100%;
+    }
+
+    h3.sub-title {
+        color: white;
+    }
 }
 
 /* // Small devices (landscape phones, 576px and up) */

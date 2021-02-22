@@ -1,7 +1,7 @@
 <template>
   <div class="page-content">
     <!-- landing  -->
-    <div class="container-fluid image-background-section landing-services">
+    <div class="container-fluid image-background-section landing-industries">
       <div class="row pt-5 pb-5 justify-content-center">
         <div class="col-12 col-md-10 col-lg-8 pt-3 pb-3 pt-md-5 pb-md-5">
           <h2 class="m-0 pb-5">Our Industries</h2>
@@ -32,7 +32,7 @@
         </div>
       </div>
       <div class="row image-container d-md-none">
-        <img class="full-img" src="~static/img/dortmund-steel.jpg" alt="">
+        <img class="full-img" src="~static/img/ferrybridge-barge-handler.jpg" alt="ferrybridge barge handler">
       </div>
     </section>
     <!-- Oil & Gas   -->
@@ -58,7 +58,7 @@
         </div>
       </div>
       <div class="row image-container">
-        <img class="full-img" src="~static/img/dortmund-steel.jpg" alt="">
+        <img class="full-img" src="~static/img/egypt-lifting.jpeg" alt="egypt lifting">
       </div>
     </section>
     <!-- power-generation   -->
@@ -85,7 +85,7 @@
         </div>
       </div>
       <div class="row image-container d-md-none">
-        <img class="full-img" src="~static/img/dortmund-steel.jpg" alt="">
+        <img class="full-img" src="~static/img/eggborough-landscape.jpg" alt="eggborough power station">
       </div>
     </section>
     <!-- petrochemical   -->
@@ -113,7 +113,7 @@
         </div>
       </div>
       <div class="row image-container">
-        <img class="full-img" src="~static/img/dortmund-steel.jpg" alt="">
+        <img class="full-img" src="~static/img/demolition-excavator.jpg" alt="a demolition excavator">
       </div>
     </section>
     <!-- Pharmaceutical   -->
@@ -138,9 +138,6 @@
           </div>
         </div>
       </div>
-      <div class="row image-container d-md-none">
-        <img class="full-img" src="~static/img/dortmund-steel.jpg" alt="">
-      </div>
     </section>
   </div>
 </template>
@@ -152,6 +149,10 @@ export default {
 </script>
 
 <style lang="scss">
+
+.landing-industries {
+  background: linear-gradient(rgba($ids-blue, 0.2), rgba($ids-blue, 0.2)), url('~static/img/steel-mill.jpg') center center / cover no-repeat;
+}
 
 img.full-img {
   width: 100%;

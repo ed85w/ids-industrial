@@ -3,7 +3,7 @@
         <!-- landing  -->
         <div class="container-fluid image-background-section landing-services">
           <div class="row pt-5 pb-5 justify-content-center">
-            <div class="col-12 col-md-10 col-lg-8 pt-3 pb-3 pt-md-5 pb-md-5 test">
+            <div class="col-12 col-md-10 col-lg-8 pt-3 pb-3 pt-md-5 pb-md-5">
               <h2 class="m-0 pb-5">Our Services</h2>
               <h5 class="m-0 pb-5">IDS Industrial can provide a full suite of services to prospective clients to ensure all aspects of the project are accounted for, planned for and managed accordingly.</h5>
             </div>
@@ -136,6 +136,7 @@ h5 {
 
 .landing-services {
     background: linear-gradient(rgba($ids-blue, 0.2), rgba($ids-blue, 0.2)), url('~static/img/eggborough-power-station.jpg') center center / cover no-repeat;
+    // background-attachment: fixed;
 }
 
 #principal {
@@ -147,7 +148,7 @@ h5 {
 }
 
 #structural-engineering {
-    background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('~static/img/dortmund-steel.jpg') center 80% / cover no-repeat;
+  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('~static/img/dortmund-steel.jpg') center 80% / cover no-repeat;
 }
 
 
