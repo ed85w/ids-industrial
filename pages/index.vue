@@ -3,8 +3,8 @@
         <div class="container-fluid">
           <div class="row justify-content-center align-items-end pb-5 landing-home">
             <div class="carousel-container">
-              <img src="~static/img/power-station-carousel.jpeg" alt="" class="carousel-img" v-bind:id="'list-' + activeSlide">
-              <img src="~static/img/teeside-carousel.jpg" alt="" class="carousel-img teeside" v-bind:class="{activeSlide: 'active-slide'}">
+              <img src="~static/img/power-station-carousel.jpeg" alt="" class="carousel-img" v-if="activeSlide = 0">
+              <img src="~static/img/teeside-carousel.jpg" alt="" class="carousel-img teeside">
               <img src="~static/img/greece-carousel.jpeg" alt="" class="carousel-img">
             </div>
             <div class="col-12 col-md-10 col-lg-8 text-right pb-3">
@@ -65,7 +65,7 @@
 export default {
   data() {
     return {
-      activeSlide: 0
+      activeSlide: 0,
     }
   },
   head(){
@@ -81,36 +81,22 @@ export default {
     };
   },
   methods: {
-    imageLoop: function() {
-      const slides = document.querySelectorAll('.carousel-img');
-      slides[this.activeSlide].classList.remove('active-slide');
-      slides[this.activeSlide+1].classList.add('active-slide');
-      if(this.activeSlide < 3 ){
-        activeSlide += 1
-      } else {
-        this.activeSlide = 0
-      }
-    },
     doStuff: function(){
       setInterval(function(){ 
-        // const slides = document.querySelectorAll('.carousel-img');
-        // console.log(slides[0])
         if(this.activeSlide < 2 ){
-          activeSlide += 1
+          this.activeSlide += 1
         } else {
           this.activeSlide = 0
         }
         console.log(this.activeSlide)
-        // if (slides[0].classList('active-slide')){
-        //   slides[0].classList.remove('active-slide');
-        // }
-        // slides[1].classList.add('active-slide');
+
       }, 3000);
     }
   },
   mounted () {
     // add class to navbar to identify home page 
     document.body.classList.add('home')
+    // this.imageLoop();
     this.doStuff();
   },
   destroyed () {
