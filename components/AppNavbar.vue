@@ -234,9 +234,9 @@ body {
                             height: 0;
                             transition: max-height 0.5s ease;
 
-                            .subitem:last-child {
-                                padding-bottom: 0;
-                            }
+                            // .subitem:last-child {
+                            //     padding-bottom: 0;
+                            // }
                         }
 
                         button.submenu-toggle {
@@ -250,7 +250,6 @@ body {
 
                             span i {
                                 padding: 0;
-
                                 color: $ids-blue;
                                 transition: 0.3s ease-in;
                             }
@@ -392,7 +391,7 @@ body {
                 }
 
                 li.item.has-submenu {
-
+                    justify-content: center;
                     align-items: center;
                     flex-wrap: nowrap;
 
@@ -407,7 +406,7 @@ body {
                     ul.submenu {
                         position: absolute;
                         top: 100%;
-                        left: 0;
+                        left: initial;
                         height: auto;
                         display: none;
                         width: auto;
