@@ -1,6 +1,6 @@
 <template>
     <div class="container-fluid" >
-        <div id="nav-row" class="row" :class="{ scrolled : scrolled }">
+        <div id="nav-row" class="row justify-content-center" :class="{ scrolled : scrolled, active: showMobileMenu }">
             <nav id="navbar1" class="col-12 col-md-10 col-lg-8 pt-0 pb-0 navbar" :class="{ scrolled : scrolled, active: showMobileMenu }">
                 <div class="logo">
                     <NuxtLink to="/" exact>
@@ -10,7 +10,20 @@
                     </NuxtLink>
                 </div>
                 <ul class="nav-menu p-0">
-                    <li><nuxt-link to="/#about" exact>About</nuxt-link></li>
+                    <!-- item with subitems  -->
+                    <li class="item has-submenu">
+                        <NuxtLink to="/#about" tabindex="0" exact>About</NuxtLink>
+                        <button type="button" class="submenu-toggle" aria-expanded="false" v-on:click="toggleItem($event)">
+                            <span class="submenu-open-icon">
+                                <i class="fa fa-caret-down"></i>
+                            </span>
+                        </button>
+                        <ul class="submenu">
+                            <li class="subitem"><nuxt-link to="#" exact>H&S Doc</nuxt-link></li>
+                            <li class="subitem"><nuxt-link to="#" exact>H&S Doc</nuxt-link></li>
+                        </ul>
+                    </li>
+                    <!-- end of item with subitems  -->
                     <!-- item with subitems  -->
                     <li class="item has-submenu">
                         <NuxtLink to="/services" tabindex="0" exact>Services</NuxtLink>
@@ -139,7 +152,7 @@ body {
 
     #nav-row {
         z-index: 999;
-        display: block;
+        display: flex;
         position: fixed;
         top: 0;
         width: 100%;
@@ -148,9 +161,7 @@ body {
         background: white;
 
         #navbar1 {
-            // position: static;
-            max-height: 100vh;
-            overflow: scroll;
+
 
             img.logo {
                 height: 70px;
@@ -195,6 +206,7 @@ body {
                 li {
                     width: 100%;
                     margin: 0;
+                    text-align: left;
                     padding: 10px 10px;
 
                     a {
@@ -209,7 +221,7 @@ body {
 
                     &.item.has-submenu {
                         display: flex;
-                        justify-content: center;
+                        // justify-content: center;
                         flex-wrap: wrap;
                         overflow: hidden;
 
@@ -217,10 +229,14 @@ body {
                             width: 100%;
                             display: block;
                             list-style: none;
-                            // text-align: left;
+                            text-align: left;
                             transition: 0.5s ease;
                             height: 0;
                             transition: max-height 0.5s ease;
+
+                            .subitem:last-child {
+                                padding-bottom: 0;
+                            }
                         }
 
                         button.submenu-toggle {
@@ -260,6 +276,8 @@ body {
             }
             // active nav menu 
             &.active {
+                max-height: 100vh;
+                overflow: scroll;
                 background: white;
 
                 ul.nav-menu {
@@ -278,6 +296,11 @@ body.home {
     #nav-row {
 
         background: transparent;
+
+        &.active {
+            background: white;
+            transition: 0s;
+        }
 
         #navbar1 {
 
@@ -309,8 +332,8 @@ body.home {
 }
 
 
-/* tablets and above */
-@media (min-width: 768px) {
+// laptops/desktops 
+@media (min-width: 992px) {
 
 body {
 
@@ -320,8 +343,6 @@ body {
 
         #navbar1 {
             position: relative;
-            left: 50%;
-            transform: translateX(-50%);
             display: flex;
             align-items: center;
             overflow: initial;
@@ -356,6 +377,7 @@ body {
                         padding: 5px;
                         font-size: 14px;
                         color: $ids-blue;
+                        transition: 0s;
 
                         &:hover {
                             text-decoration: none;
@@ -364,6 +386,7 @@ body {
 
                     &:hover {
                         background: $ids-yellow;
+                        transition: 0s;
                     }
 
                 }
@@ -376,6 +399,7 @@ body {
                     button.submenu-toggle span i {
                         padding-top: 8px;
                         padding-bottom: 8px;
+                        transition: 0s;
                     }
 
            
@@ -386,12 +410,12 @@ body {
                         left: 0;
                         height: auto;
                         display: none;
-                        left: initial;
                         width: auto;
+                        text-align: center;
 
                         li {
                             background: $ids-blue;
-                            line-height: 1;
+                            // line-height: 1;
                             padding: 10px 5px;
                             background: #2a4b9beb;
                             border-top: 3px solid #2a4b9b;
@@ -402,6 +426,10 @@ body {
                                 &:focus {
                                     outline: none;
                                 }
+                            }
+
+                            &:hover a {
+                                color: $ids-yellow;
                             }
                         }
 

@@ -3,7 +3,7 @@
         <div class="container-fluid image-background-section landing-contact">
             <div class="row pt-5 pb-5 justify-content-center">
                 <div class="col-12 col-md-10 col-lg-8 pt-3 pb-3 pt-md-5 pb-md-5">
-                    <h2 class="m-0 pb-5 page-title">Contact us</h2>
+                    <h2 class="m-0 page-title">Contact us</h2>
                     <!-- <h5 class="m-0 pb-5">Project delivery starts here</h5> -->
                 </div>
                 <div class="col-12 col-md-10 col-lg-8 pt-3 pb-3 pt-md-5 pb-md-5">
@@ -124,13 +124,13 @@ export default {
 <style lang="scss" scoped>
 
 .landing-contact {
-    background: linear-gradient(rgba($ids-blue, 0.2), rgba($ids-blue, 0.2)), url('~static/img/petrochemical.jpg') 40% center / cover no-repeat;
+    background: linear-gradient(rgba($ids-blue, 0.2), rgba($ids-blue, 0.2)), url('~static/img/petrochemical.jpg') 30% center / cover no-repeat;
 
 }
 
-.contact-form {
-    background: linear-gradient(rgba($ids-blue, 0.2), rgba($ids-blue, 0.2)), url('~static/img/dortmund-steel.jpg') center 80% / cover no-repeat;
-}
+// .contact-form {
+//     background: linear-gradient(rgba($ids-blue, 0.2), rgba($ids-blue, 0.2)), url('~static/img/dortmund-steel.jpg') center 80% / cover no-repeat;
+// }
 
 h5.director-name {
     font-family: 'Audiowide', cursive;
@@ -145,6 +145,11 @@ h5.director-title {
 p a {
     font-family: 'Lato', sans-serif;
     color: $ids-grey;
+
+    &:hover {
+        text-decoration: none;
+        color: $ids-blue;
+    }
 }
 
 img.contact-img {

@@ -124,12 +124,13 @@ export default {
     bodyText.forEach((bodyText) => {
       gsap.from(bodyText, { 
         opacity: 0,
-        duration: 1,
+        y: 30,
+        duration: 0.5,
         scrollTrigger: {
             trigger: bodyText,
+            start: "center bottom", //when center of element crosses bottom of page
+            end: "bottom center",   //when bottom of element crosses center of page
             toggleActions: "restart none none none",
-            scrub: 2,
-            markers: true
         }
       });
     })

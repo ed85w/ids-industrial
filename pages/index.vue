@@ -107,18 +107,35 @@ export default {
       document.body.classList.add('home')
       // gsap 
       gsap.registerPlugin(ScrollTrigger)
+      
       var bodyText = gsap.utils.toArray('.body-text');
       bodyText.forEach((bodyText) => {
         gsap.from(bodyText, { 
           opacity: 0,
-          duration: 1,
+          y: 30,
+          duration: 0.5,
           scrollTrigger: {
               trigger: bodyText,
+              start: "center bottom", //when center of element crosses bottom of page
+              end: "bottom center",   //when bottom of element crosses center of page
               toggleActions: "restart none none none",
-              scrub: 2
           }
         });
       })
+      // var liText = gsap.utils.toArray('li');
+      // liText.forEach((liText) => {
+      //   gsap.from(liText, { 
+      //     opacity: 0,
+      //     x: -30,
+      //     duration: 0.5,
+      //     scrollTrigger: {
+      //         trigger: liText,
+      //         start: "center bottom", //when center of element crosses bottom of page
+      //         end: "bottom center",   //when bottom of element crosses center of page
+      //         toggleActions: "restart none none none",
+      //     }
+      //   });
+      // })
     },
     destroyed () {
       document.body.classList.remove('home')
@@ -168,12 +185,14 @@ div.wrapper {
 
       }
       h1.home-title {
-        font-size: 6.5vw
+        font-size: 6.5vw;
+        font-size: min(6.5vw, 27px);
       }
 
       h5.home-tagline {
         font-family: 'Lato', sans-serif;
         font-size: 5vw;
+        font-size: min(5vw, 23px);
       }
 
 
