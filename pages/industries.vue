@@ -164,10 +164,10 @@ export default {
       gsap.from(bodyText, { 
         opacity: 0,
         y: 30,
-        duration: 0.5,
+        duration: 1,
         scrollTrigger: {
             trigger: bodyText,
-            start: "center bottom", //when center of element crosses bottom of page
+            start: "top bottom", //when top of element crosses bottom of page
             end: "bottom center",   //when bottom of element crosses center of page
             toggleActions: "restart none none reset",
         }
