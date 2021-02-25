@@ -11,7 +11,7 @@
                 </div>
                 <ul class="nav-menu p-0">
                     <!-- item with subitems  -->
-                    <li class="item has-submenu">
+                    <li class="item has-submenu pb-0">
                         <NuxtLink to="/#about" tabindex="0" exact>About</NuxtLink>
                         <button type="button" class="submenu-toggle" aria-expanded="false" v-on:click="toggleItem($event)">
                             <span class="submenu-open-icon">
@@ -25,7 +25,7 @@
                     </li>
                     <!-- end of item with subitems  -->
                     <!-- item with subitems  -->
-                    <li class="item has-submenu">
+                    <li class="item has-submenu pb-0">
                         <NuxtLink to="/services" tabindex="0" exact>Services</NuxtLink>
                         <button type="button" class="submenu-toggle" aria-expanded="false" v-on:click="toggleItem($event)">
                             <span class="submenu-open-icon">
@@ -44,7 +44,7 @@
                     </li>
                     <!-- end of item with subitems  -->
                     <!-- item with subitems  -->
-                    <li class="item has-submenu">
+                    <li class="item has-submenu pb-0">
                         <NuxtLink to="/industries" tabindex="0" exact>Industries</NuxtLink>
                         <button type="button" class="submenu-toggle" aria-expanded="false" v-on:click="toggleItem($event)">
                             <span class="submenu-open-icon">
@@ -207,7 +207,7 @@ body {
                     width: 100%;
                     margin: 0;
                     text-align: left;
-                    padding: 10px 10px;
+                    padding: 10px 10px 10px 20px;
 
                     a {
                         color: $ids-blue;
