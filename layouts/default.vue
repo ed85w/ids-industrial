@@ -15,8 +15,7 @@ export default {
   components: {
     AppNavbar,
     AppFooter
-  }
-
+  },
 }
 </script>
 
@@ -35,6 +34,10 @@ export default {
   margin-top: $page-margin-top-mob;
 }
 
+h2.page-title {
+  font-size: 6vw;
+}
+
 h3 {
   font-size: 1.2rem;
 }
@@ -42,6 +45,10 @@ h3 {
   color: $ids-blue;
   margin: 0;
   padding-bottom: 2rem;
+}
+
+h5.page-tagline {
+ font-size: 4.5vw;
 }
 
 .body-text {
@@ -53,8 +60,9 @@ h3 {
 .yellow-btn {
   background: $ids-yellow;
   color: $ids-blue;
+  font-size: 20px;
   border-radius: 0;
-  padding: 3px 10px;
+  padding: 3px 15px;
 
   a {
     color: $ids-blue;
@@ -95,6 +103,23 @@ h3 {
 }
 /* // Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
+
+  p.body-text,
+  li {
+    font-size: 18px;
+  } 
+
+  h2.page-title {
+    font-size: 2.75rem;
+  }
+
+  h3.sub-title {
+    font-size: 32px;
+  }
+
+  h5.page-tagline {
+    font-size: 1.75rem;
+  }
 
   .page-content {
     margin-top: $page-margin-top-desktop;

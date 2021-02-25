@@ -4,17 +4,17 @@
         <div class="container-fluid image-background-section landing-services">
           <div class="row pt-5 pb-5 justify-content-center">
             <div class="col-12 col-md-10 col-lg-8 pt-3 pb-3 pt-md-5 pb-md-5">
-              <h2 class="m-0 pb-5">Our Services</h2>
-              <h5 class="m-0 pb-5">IDS Industrial can provide a full suite of services to prospective clients to ensure all aspects of the project are accounted for, planned for and managed accordingly.</h5>
+              <h2 class="m-0 pb-5 page-title">Our Services</h2>
+              <h5 class="m-0 pb-5 page-tagline">IDS Industrial can provide a full suite of services to prospective clients to ensure all aspects of the project are accounted for, planned for and managed accordingly.</h5>
             </div>
           </div>
         </div>
         <!-- feasibility section  -->
         <section id="feasibility" class="container-fluid">
-          <div class="row pt-5 pb-5 justify-content-center ">
+          <div class="row pt-5 pb-5 justify-content-center">
             <div class="col-12 col-md-10 col-lg-8 pt-3 pb-3 pt-md-5 pb-md-5">
               <h3 class="sub-title">
-                Project Feasibility Studies & Commercial Planning
+                Project Feasibility Studies &<br>Commercial Planning
               </h3>
               <p class="body-text">IDS can provide clients with early assessments of projects, provide budgeting advice and assist with any outline engagement with stakeholders and local authorities.</p>
               <p class="body-text">We can also assist in the procurement of specialist services for decommissioning, dismantling and demolition.</p>
@@ -27,7 +27,7 @@
           <div class="row pt-5 pb-5 justify-content-center ">
             <div class="col-12 col-md-10 col-lg-8 pt-3 pb-3 pt-md-5 pb-md-5">
               <h3 class="sub-title">
-                Principal Designer Duties & Comprehensive HSE Management
+                Principal Designer Duties &<br>Comprehensive HSE Management
               </h3>
               <p class="body-text">We provide a tailored service to meet clients’ needs.</p>
               <p class="body-text">We can take responsibility for all pre-construction services as required within the CDM regulations to drive down project risk and provide tendering contractors with all essential information to safely demolish the structures.</p>
@@ -40,7 +40,7 @@
           <div class="row pt-5 pb-5 justify-content-center">
             <div class="col-12 col-md-10 col-lg-8 pt-3 pb-3 pt-md-5 pb-md-5">
               <h3 class="sub-title">
-                Demolition Project Management
+                Demolition Project <br class="d-md-none">Management
               </h3>
                 <p class="body-text font-weight-bold">We have 35 years’ in-house experience of managing complex decommissioning & demolition projects from Nuclear Sites to City Centre Demolition.</p>              
               <p class="body-text">We can provide a complete engineering support function to live demolition projects, assisting clients in reviewing RAMS, providing technical advice and support, and overseeing the works to ensure safety standards are exceeded.</p>
@@ -53,7 +53,7 @@
           <div class="row pt-5 pb-5 justify-content-center ">
             <div class="col-12 col-md-10 col-lg-8 pt-3 pb-3 pt-md-5 pb-md-5">
               <h3 class="sub-title">
-                Explosive Demolition Management
+                Explosive Demolition <br class="d-md-none">Management
               </h3>
               <p class="body-text">We have in-house experience of managing the planning and execution phases of explosive events, from City Centre blasting through to blasting within Power Stations and Oil Refineries.</p>
               <p class="body-text">IDS can engage with specialist explosive engineers and work with them to manage the process from start to finish.</p>
@@ -66,7 +66,7 @@
           <div class="row pt-5 pb-5 justify-content-center ">
             <div class="col-12 col-md-10 col-lg-8 pt-3 pb-3 pt-md-5 pb-md-5">
               <h3 class="sub-title">
-                Temporary Works Management
+                Temporary Works <br class="d-md-none">Management
               </h3>
               <p class="body-text font-weight-bold">Temporary works management in demolition is often overlooked. It is a fundamental aspect of any technical demolition project from pre-weakening, to propping, to explosive demolition.</p>
               <p class="body-text">Each stage of the project needs temporary work advice and management and this is something IDS can oversee and ensure that compliance with BS5975 is adhered to.</p>
@@ -105,6 +105,35 @@
 
 <script>
 export default {
+      head(){
+      return {
+        title: 'IDS Industrial | Services',
+        meta: [
+          {
+            hid: 'description', //id
+            name: 'description', //meta type
+            content: 'PUT DESCRIPTION HERE' //meta content
+          }
+        ]
+      };
+    },
+    mounted () {
+    // gsap 
+    gsap.registerPlugin(ScrollTrigger)
+    var bodyText = gsap.utils.toArray('.body-text');
+    bodyText.forEach((bodyText) => {
+      gsap.from(bodyText, { 
+        opacity: 0,
+        duration: 1,
+        scrollTrigger: {
+            trigger: bodyText,
+            toggleActions: "restart none none none",
+            scrub: 2,
+            markers: true
+        }
+      });
+    })
+  }, 
 
 }
 </script>
@@ -135,7 +164,7 @@ h5 {
 }
 
 .landing-services {
-    background: linear-gradient(rgba($ids-blue, 0.2), rgba($ids-blue, 0.2)), url('~static/img/eggborough-power-station.jpg') center center / cover no-repeat;
+    background: linear-gradient(rgba($ids-blue, 0.2), rgba($ids-blue, 0.2)), url('~static/img/eggborough-power-station.jpg') 50% 50% / cover no-repeat;
     // background-attachment: fixed;
 }
 

@@ -4,8 +4,8 @@
     <div class="container-fluid image-background-section landing-industries">
       <div class="row pt-5 pb-5 justify-content-center">
         <div class="col-12 col-md-10 col-lg-8 pt-3 pb-3 pt-md-5 pb-md-5">
-          <h2 class="m-0 pb-5">Our Industries</h2>
-          <h5 class="m-0 pb-5">Experienced and competent demolition management</h5>
+          <h2 class="m-0 pb-5 page-title">Our Industries</h2>
+          <h5 class="m-0 pb-5 page-tagline">Experienced and competent demolition management</h5>
         </div>
       </div>
     </div>
@@ -14,7 +14,7 @@
       <div class="row pt-5 pb-5 pb-md-0 justify-content-center">
         <div class="col-12 col-md-10 col-lg-8 pt-3 pb-3 pt-md-5 pb-md-5">
           <div class="title-container">
-            <h2 class="m-0 title-cover">Manufacturing & Industrial</h2>
+            <h3 class="m-0 sub-title title-cover">Manufacturing & Industrial</h3>
             <div class="yellow-line"></div>
           </div>
         </div>
@@ -40,7 +40,7 @@
       <div class="row pt-5 pb-5 justify-content-center">
         <div class="col-12 col-md-10 col-lg-8 pt-3 pb-3 pt-md-5 pb-md-5">
           <div class="title-container">
-            <h2 class="m-0 title-cover">Oil & Gas</h2>
+            <h3 class="m-0 sub-title title-cover">Oil & Gas</h3>
             <div class="yellow-line"></div>
           </div>
         </div>
@@ -66,7 +66,7 @@
       <div class="row pt-5 pb-5 pb-md-0 justify-content-center">
         <div class="col-12 col-md-10 col-lg-8 pt-3 pb-3 pt-md-5 pb-md-5">
           <div class="title-container">
-            <h2 class="m-0 title-cover">Power Generation</h2>
+            <h3 class="m-0 sub-title title-cover">Power Generation</h3>
             <div class="yellow-line"></div>
           </div>
         </div>
@@ -93,7 +93,7 @@
       <div class="row pt-5 pb-5 justify-content-center">
         <div class="col-12 col-md-10 col-lg-8 pt-3 pb-3 pt-md-5 pb-md-5">
           <div class="title-container">
-            <h2 class="m-0 title-cover">Petrochemical</h2>
+            <h3 class="m-0 sub-title title-cover">Petrochemical</h3>
             <div class="yellow-line"></div>
           </div>
         </div>
@@ -121,7 +121,7 @@
       <div class="row pt-5 pb-5 justify-content-center">
         <div class="col-12 col-md-10 col-lg-8 pt-3 pb-3 pt-md-5 pb-md-5">
           <div class="title-container">
-            <h2 class="m-0 title-cover">Pharmaceutical</h2>
+            <h3 class="m-0 sub-title title-cover">Pharmaceutical</h3>
             <div class="yellow-line"></div>
           </div>
         </div>
@@ -144,14 +144,41 @@
 
 <script>
 export default {
-
+    head(){
+      return {
+        title: 'IDS Industrial | Industries',
+        meta: [
+          {
+            hid: 'description', //id
+            name: 'description', //meta type
+            content: 'PUT DESCRIPTION HERE' //meta content
+          }
+        ]
+      };
+    },
+      mounted () {
+    // gsap 
+    gsap.registerPlugin(ScrollTrigger)
+    var bodyText = gsap.utils.toArray('.body-text');
+    bodyText.forEach((bodyText) => {
+      gsap.from(bodyText, { 
+        opacity: 0,
+        duration: 1,
+        scrollTrigger: {
+            trigger: bodyText,
+            toggleActions: "restart none none none",
+            scrub: 2
+        }
+      });
+    })
+  }, 
 }
 </script>
 
 <style lang="scss">
 
 .landing-industries {
-  background: linear-gradient(rgba($ids-blue, 0.2), rgba($ids-blue, 0.2)), url('~static/img/steel-mill.jpg') center center / cover no-repeat;
+  background: linear-gradient(rgba($ids-blue, 0.2), rgba($ids-blue, 0.2)), url('~static/img/steel-mill.jpg') 50% 50% / cover no-repeat;
 }
 
 img.full-img {

@@ -81,7 +81,6 @@ export default {
             }   
         },
         toggleItem: function(btn) {
-            console.log(btn.currentTarget)
             const menu = document.querySelector("#navbar1");
             // on close (no other submenu open)
             if (btn.currentTarget.parentNode.classList.contains("submenu-active")) {
@@ -161,7 +160,7 @@ body {
             #burger-menu {
                 position: absolute;
                 top: 14px;
-                right: 17px;
+                right: 9px;
                 background: transparent;
                 border: none;
 
@@ -201,7 +200,12 @@ body {
                     a {
                         color: $ids-blue;
                         transition: 0.3s ease-in;
+                        
+                        &.focus {
+                            outline: none;
+                        }
                     }
+
 
                     &.item.has-submenu {
                         display: flex;
@@ -225,12 +229,12 @@ body {
                             border: none;
 
                             &:focus {
-                                outline: -webkit-focus-ring-color auto 1px;
+                                outline: none;
                             }
 
                             span i {
-                                padding-top: 8px;
-                                padding-bottom: 8px;
+                                padding: 0;
+
                                 color: $ids-blue;
                                 transition: 0.3s ease-in;
                             }
@@ -369,6 +373,11 @@ body {
                     align-items: center;
                     flex-wrap: nowrap;
 
+                    button.submenu-toggle span i {
+                        padding-top: 8px;
+                        padding-bottom: 8px;
+                    }
+
            
                     // submenu 
                     ul.submenu {
@@ -389,6 +398,10 @@ body {
 
                             a {
                                 color: white;
+
+                                &:focus {
+                                    outline: none;
+                                }
                             }
                         }
 

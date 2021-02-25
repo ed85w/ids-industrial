@@ -18,9 +18,14 @@ export default {
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
-      { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css2?family=Audiowide&family=Lato&display=swap'},
+      { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css2?family=Audiowide&family=Lato:wght@400;700&display=swap'},
       { rel: 'stylesheet', href: 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'}
     ],
+    script:[
+      { src: 'https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js'},
+      { src: 'https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/ScrollTrigger.min.js'},
+      // { src: 'https://cdnjs.com/libraries/smoothscroll'}
+    ]
   },
 
   // Global CSS: https://go.nuxtjs.dev/config-css
@@ -48,7 +53,18 @@ export default {
   styleResources: {
     scss: ['./assets/scss/*.scss']
   },
-
+  // smooth scrolling 
+  // router: {
+  //   scrollBehavior(to) {
+  //     if (to.hash) {
+  //       return window.scrollTo({
+  //         top: document.querySelector(to.hash).offsetTop - 30,
+  //         behavior: 'smooth'
+  //       })
+  //     }
+  //     return window.scrollTo({ top: 0, behavior: 'smooth' })
+  //   }
+  // },
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
   }
