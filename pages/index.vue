@@ -9,14 +9,17 @@
             >
               <b-carousel-slide
                 img-src="~static/img/power-station-carousel.jpeg"
+                img-alt="an image of a power station"
                 class="carousel-img carousel-1"
               ></b-carousel-slide>
               <b-carousel-slide
                 img-src="~static/img/greece-carousel.jpeg"
+                img-alt="an image of a refinery in greece"
                 class="carousel-img carousel-2"
               ></b-carousel-slide>
               <b-carousel-slide
                 img-src="~static/img/teeside-carousel.jpg"
+                img-alt="an image of teeside power station"
                 class="carousel-img carousel-3"
               ></b-carousel-slide>
             </b-carousel>
@@ -97,7 +100,7 @@ export default {
           {
             hid: 'description', //id
             name: 'description', //meta type
-            content: 'PUT DESCRIPTION HERE' //meta content
+            content: 'IDS Industrial is an internationally recognised decommissioning & demolition consultancy with extensive experience in high hazardous industries.' //meta content
           }
         ]
       };

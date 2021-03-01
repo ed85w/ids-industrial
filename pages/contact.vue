@@ -113,7 +113,7 @@ export default {
           {
             hid: 'description', //id
             name: 'description', //meta type
-            content: 'PUT DESCRIPTION HERE' //meta content
+            content: 'Contact IDS Industrial today to find out how we can assist you ' //meta content
           }
         ]
       };

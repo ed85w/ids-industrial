@@ -47,11 +47,11 @@
         <div class="col-12 col-md-10 col-lg-8 pt-3 pb-3 pt-md-5 pb-md-5">
           <div class="row">
             <div class="col-12 col-md-6">
-              <p class="body-text animated bold-on-desktop">The Oil & Gas industry is facing some of the biggest challenges within the industrial decommissioning and demolition arena.</p>
-              <p class="body-text animated">Large deposits of natural resource are running dry and many onshore & offshore assets are becoming redundant. IDS can work with clients to plan and manage all aspects of their decommissioning, dismantling and demolition requirements.</p>
+              <p class="body-text bold-on-desktop">The Oil & Gas industry is facing some of the biggest challenges within the industrial decommissioning and demolition arena.</p>
+              <p class="body-text">Large deposits of natural resource are running dry and many onshore & offshore assets are becoming redundant. IDS can work with clients to plan and manage all aspects of their decommissioning, dismantling and demolition requirements.</p>
             </div>
             <div class="col-12 col-md-6">
-              <p class="body-text animated">We have in-house experience of managing complex Oil & Gas projects onshore as well as providing technical support for complex offshore dismantling projects in the Far East.</p>
+              <p class="body-text">We have in-house experience of managing complex Oil & Gas projects onshore as well as providing technical support for complex offshore dismantling projects in the Far East.</p>
               <button class="btn yellow-btn mt-4"><nuxt-link to="/contact">Contact us</nuxt-link></button>
             </div>
           </div>
@@ -73,12 +73,12 @@
         <div class="col-12 col-md-10 col-lg-8 pt-3 pb-3 pt-md-5 pb-md-5">
           <div class="row">
             <div class="col-12 col-md-6">
-              <p class="body-text animated bold-on-desktop">The world is changing. As governments across the world look to greener alternatives when producing energy, many older power stations are being closed down and being replaced with more efficient, greener alternatives. </p>
-              <p class="body-text animated">Over the last decade, Europe has seen an unprecedented closure of coal-fed power stations. IDS are experienced in technically challenging Power Station projects.</p>
+              <p class="body-text bold-on-desktop">The world is changing. As governments across the world look to greener alternatives when producing energy, many older power stations are being closed down and being replaced with more efficient, greener alternatives. </p>
+              <p class="body-text">Over the last decade, Europe has seen an unprecedented closure of coal-fed power stations. IDS are experienced in technically challenging Power Station projects.</p>
             </div>
             <div class="col-12 col-md-6">
-              <p class="body-text animated">We can support clients and contractors on a wide range of support services to ensure safe delivery of the project.</p>
-              <p class="body-text animated">Some of the Power Station projects that we have been involved with are the: Dismantling of Fire- Damaged Precipitators at Lynemouth Power Station;  Dismantling of Fire-Damaged FGD Plant at Ferrybridge Power Station and the Demolition of Barking Power Station.</p>
+              <p class="body-text">We can support clients and contractors on a wide range of support services to ensure safe delivery of the project.</p>
+              <p class="body-text">Some of the Power Station projects that we have been involved with are the: Dismantling of Fire- Damaged Precipitators at Lynemouth Power Station;  Dismantling of Fire-Damaged FGD Plant at Ferrybridge Power Station and the Demolition of Barking Power Station.</p>
               <button class="btn yellow-btn mt-4"><nuxt-link to="/contact">Contact us</nuxt-link></button>
             </div>
           </div>
@@ -100,13 +100,13 @@
         <div class="col-12 col-md-10 col-lg-8 pt-3 pb-3 pt-md-5 pb-md-5">
           <div class="row">
             <div class="col-12 col-md-6">
-              <p class="body-text animated bold-on-desktop">IDS have successfully managed Petrochemical projects in the UK, Continental Europe, the Middle East and the Far East.</p>
-              <p class="body-text animated">We understand the complexities that this sector provides and can assist clients in all areas to plan and safely manage their projects. We work with many multinational clients to provide a comprehensive service and deliver the projects in a timely manner. </p>
-              <p class="body-text animated">Projects within this sector provide different challenges depending on the production process and the chemicals that are manufactured.</p>
+              <p class="body-text bold-on-desktop">IDS have successfully managed Petrochemical projects in the UK, Continental Europe, the Middle East and the Far East.</p>
+              <p class="body-text">We understand the complexities that this sector provides and can assist clients in all areas to plan and safely manage their projects. We work with many multinational clients to provide a comprehensive service and deliver the projects in a timely manner. </p>
+              <p class="body-text">Projects within this sector provide different challenges depending on the production process and the chemicals that are manufactured.</p>
             </div>
             <div class="col-12 col-md-6">
-              <p class="body-text animated">Engaging with a consultancy that will review all processes and the risks within will determine the success of any deconstruction project.</p>
-              <p class="body-text animated">Often, decommissioning and demolition projects within this sector are required to be undertaken within a live facility. This requires expert advice and guidance when planning a project, we can provide all necessary expert advice to lower risk to ongoing operations. </p>
+              <p class="body-text">Engaging with a consultancy that will review all processes and the risks within will determine the success of any deconstruction project.</p>
+              <p class="body-text">Often, decommissioning and demolition projects within this sector are required to be undertaken within a live facility. This requires expert advice and guidance when planning a project, we can provide all necessary expert advice to lower risk to ongoing operations. </p>
               <button class="btn yellow-btn mt-4"><nuxt-link to="/contact">Contact us</nuxt-link></button>
             </div>
           </div>
@@ -128,11 +128,11 @@
         <div class="col-12 col-md-10 col-lg-8 pt-3 pb-3 pt-md-5 pb-md-5">
           <div class="row">
             <div class="col-12 col-md-6">
-              <p class="body-text animated bold-on-desktop">Pharmaceutical manufacturing offers complexities different to all other sectors. Often structures are deceptively complex and are full of hidden dangers. IDS can assist clients to reduce the risk of decommissioning and demolition projects to the ALARP levels. </p>
-              <p class="body-text animated">Redundant pharmaceutical plants can be rich in re-sale opportunities.</p>
+              <p class="body-text bold-on-desktop">Pharmaceutical manufacturing offers complexities different to all other sectors. Often structures are deceptively complex and are full of hidden dangers. IDS can assist clients to reduce the risk of decommissioning and demolition projects to the ALARP levels. </p>
+              <p class="body-text">Redundant pharmaceutical plants can be rich in re-sale opportunities.</p>
             </div>
             <div class="col-12 col-md-6">
-              <p class="body-text animated">IDS can review and assist in the potential resale of assets to maximise value to clients. We can do this by identifying assets with potential resale value and work with our specialist partners to market these assets on behalf of our clients.</p>
+              <p class="body-text">IDS can review and assist in the potential resale of assets to maximise value to clients. We can do this by identifying assets with potential resale value and work with our specialist partners to market these assets on behalf of our clients.</p>
               <button class="btn yellow-btn mt-4"><nuxt-link to="/contact">Contact us</nuxt-link></button>
             </div>
           </div>
@@ -151,7 +151,7 @@ export default {
           {
             hid: 'description', //id
             name: 'description', //meta type
-            content: 'PUT DESCRIPTION HERE' //meta content
+            content: 'IDS have a vast amount of experience working in the heavy industries such as steel mills, car production plants and dock yards dismantling and demolishing extremely heavy structures.' //meta content
           }
         ]
       };
@@ -159,7 +159,7 @@ export default {
     mounted () {
     // gsap 
     gsap.registerPlugin(ScrollTrigger)
-    var bodyText = gsap.utils.toArray('.body-text.animated');
+    var bodyText = gsap.utils.toArray('.body-text');
     bodyText.forEach((bodyText) => {
       gsap.from(bodyText, { 
         opacity: 0,

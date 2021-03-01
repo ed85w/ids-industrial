@@ -13,12 +13,12 @@
                     <!-- item with subitems  -->
                     <li class="item has-submenu pb-0">
                         <NuxtLink to="/#about" tabindex="0" exact>About</NuxtLink>
-                        <button type="button" class="submenu-toggle ml-3 ml-md-1" aria-expanded="false" v-on:click="toggleItem($event)">
+                        <button type="button" class="submenu-toggle ml-3 ml-md-1" aria-expanded="false" aria-label="expand about submenu" v-on:click="toggleItem($event)">
                             <span class="submenu-open-icon">
                                 <i class="fa fa-caret-down"></i>
                             </span>
                         </button>
-                        <ul class="submenu">
+                        <ul class="submenu about-submenu">
                             <li class="subitem"><a href="./docs/2021 IDS Industrial - For Clients.pdf" target="_blank">Company Brochure</a></li>
                             <li class="subitem"><a href="./docs/20210101 Health and Safety Policy Statement.pdf" target="_blank">Health & Safety Policy Statement</a></li>
                             <li class="subitem"><a href="./docs/20210101 Environmental Policy Statement.pdf" target="_blank">Environmental Policy Statement</a></li>
@@ -28,7 +28,7 @@
                     <!-- item with subitems  -->
                     <li class="item has-submenu pb-0">
                         <NuxtLink to="/services" tabindex="0" exact>Services</NuxtLink>
-                        <button type="button" class="submenu-toggle ml-3 ml-md-1" aria-expanded="false" v-on:click="toggleItem($event)">
+                        <button type="button" class="submenu-toggle ml-3 ml-md-1" aria-expanded="false" aria-label="expand services submenu" v-on:click="toggleItem($event)">
                             <span class="submenu-open-icon">
                                 <i class="fa fa-caret-down"></i>
                             </span>
@@ -47,7 +47,7 @@
                     <!-- item with subitems  -->
                     <li class="item has-submenu pb-0">
                         <NuxtLink to="/industries" tabindex="0" exact>Industries</NuxtLink>
-                        <button type="button" class="submenu-toggle ml-3 ml-md-1" aria-expanded="false" v-on:click="toggleItem($event)">
+                        <button type="button" class="submenu-toggle ml-3 ml-md-1" aria-expanded="false" aria-label="expand industries submenu" v-on:click="toggleItem($event)">
                             <span class="submenu-open-icon">
                                 <i class="fa fa-caret-down"></i>
                             </span>
@@ -63,7 +63,7 @@
                     <!-- end of item with subitems  -->
                     <li><nuxt-link to="contact" exact>Contact</nuxt-link></li>
                 </ul>
-                <button id="burger-menu" :aria-expanded="showMobileMenu ? 'true' : 'false'" @click="showMobileMenu = !showMobileMenu">
+                <button id="burger-menu" :aria-expanded="showMobileMenu ? 'true' : 'false'" @click="showMobileMenu = !showMobileMenu" aria-label="expand  navigation menu">
                     <div class="burger-line"></div>
                     <div class="burger-line"></div>
                     <div class="burger-line"></div>
@@ -214,9 +214,6 @@ body {
                         color: $ids-blue;
                         transition: 0.3s ease-in;
                         
-                        &.focus {
-                            outline: none;
-                        }
                     }
 
 
@@ -234,10 +231,6 @@ body {
                             transition: 0.5s ease;
                             height: 0;
                             transition: max-height 0.5s ease;
-
-                            // .subitem:last-child {
-                            //     padding-bottom: 0;
-                            // }
                         }
 
                         button.submenu-toggle {
@@ -245,8 +238,8 @@ body {
                             background: transparent;
                             border: none;
 
-                            &:focus {
-                                outline: none;
+                            &:focus-visible {
+                                outline: 1px solid black;
                             }
 
                             span i {
@@ -265,10 +258,6 @@ body {
                                 text-align: center;
                                 padding: 0;
                                 transition: max-height 0.5s ease;
-                            }
-
-                            button.submenu-toggle span i {
-                                // color: $ids-yellow;
                             }
                         }
                     }
@@ -372,6 +361,10 @@ body {
                     padding: 1px;
                     text-align: center;
 
+                    &:focus-visible {
+                        outline: 2px solid black;
+                    }
+
                     a { 
                         width: initial;
                         display: block;
@@ -397,13 +390,25 @@ body {
                     align-items: center;
                     flex-wrap: nowrap;
 
-                    button.submenu-toggle span i {
+                    button.submenu-toggle {
+
+                        &:focus-visible {
+                            outline: -webkit-focus-ring-color auto 1px;
+                        }
+
+                        span i {
                         padding-top: 8px;
                         padding-bottom: 8px;
                         transition: 0s;
+                        }
                     }
 
-           
+                    a:focus {
+                        outline: none;
+                    }
+                    a:focus-visible {
+                        outline: -webkit-focus-ring-color auto 1px;
+                    }
                     // submenu 
                     ul.submenu {
                         position: absolute;
@@ -413,6 +418,10 @@ body {
                         display: none;
                         width: auto;
                         text-align: center;
+
+                        &.about-submenu {
+                            width: 238px;
+                        }
 
                         li {
                             background: $ids-blue;
@@ -427,6 +436,10 @@ body {
                                 &:focus {
                                     outline: none;
                                 }
+                                &:focus-visible {
+                                    outline: -webkit-focus-ring-color auto 1px;
+                                }
+
                             }
 
                             &:hover a {

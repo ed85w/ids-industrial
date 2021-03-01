@@ -112,7 +112,7 @@ export default {
           {
             hid: 'description', //id
             name: 'description', //meta type
-            content: 'PUT DESCRIPTION HERE' //meta content
+            content: 'IDS Industrial can provide clients with early assessments of projects, provide budgeting advice and assist with any outline engagement with stakeholders and local authorities.' //meta content
           }
         ]
       };
