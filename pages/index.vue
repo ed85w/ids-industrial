@@ -50,9 +50,9 @@
                 Why choose<br class="d-none d-lg-block"> IDS Industrial?
               </h3>
               <ul class="pl-3">
-                <li>IDS Industrial offers a one stop shop and a range of services that exceed expectations, from initial project planning through to decommissioning, demolition and site remediation.</li>
-                <li>Extensive experience in construction and demolition safety management ensuring industry best practices is achieved to reduce both SHE and operational risk to clients.</li>
-                <li class="pb-0">Project Management capabilities to meet the most demanding of projects.</li>
+                <li class="why-li">IDS Industrial offers a one stop shop and a range of services that exceed expectations, from initial project planning through to decommissioning, demolition and site remediation.</li>
+                <li class="why-li">Extensive experience in construction and demolition safety management ensuring industry best practices is achieved to reduce both SHE and operational risk to clients.</li>
+                <li class="pb-0 why-li">Project Management capabilities to meet the most demanding of projects.</li>
               </ul>
             </div>
           </div>
@@ -107,35 +107,41 @@ export default {
       document.body.classList.add('home')
       // gsap 
       gsap.registerPlugin(ScrollTrigger)
-      
+
+      // gsap timeline to animate landing page 
+      var tl = gsap.timeline({})
+      tl.from("#carousel-overlay > h1", {duration:2, x: 100, opacity: 0, ease: Power3.easeOut },1)
+      tl.from("#carousel-overlay > h5", {duration:1.5, y: 50, opacity: 0, filter: "blur(20px)", ease: Power3.easeOut },2)
+
+      // scroll animations 
       var bodyText = gsap.utils.toArray('.body-text');
       bodyText.forEach((bodyText) => {
         gsap.from(bodyText, { 
           opacity: 0,
           y: 30,
-          duration: 0.5,
+          duration: 1,
           scrollTrigger: {
-              trigger: bodyText,
-              start: "center bottom", //when center of element crosses bottom of page
-              end: "bottom center",   //when bottom of element crosses center of page
-              toggleActions: "restart none none none",
+            trigger: bodyText,
+            start: "top 80%", //when top of element crosses 80% from of page
+            end: "bottom center",   //when bottom of element crosses center of page
+            toggleActions: "play none none none",
           }
         });
       })
-      // var liText = gsap.utils.toArray('li');
-      // liText.forEach((liText) => {
-      //   gsap.from(liText, { 
-      //     opacity: 0,
-      //     x: -30,
-      //     duration: 0.5,
-      //     scrollTrigger: {
-      //         trigger: liText,
-      //         start: "center bottom", //when center of element crosses bottom of page
-      //         end: "bottom center",   //when bottom of element crosses center of page
-      //         toggleActions: "restart none none none",
-      //     }
-      //   });
-      // })
+      var liText = gsap.utils.toArray('li.why-li');
+      liText.forEach((liText) => {
+        gsap.from(liText, { 
+          opacity: 0,
+          x: -40,
+          duration: 1,
+          scrollTrigger: {
+              trigger: liText,
+              start: "center 80%", //when center of element crosses 80% of page
+              end: "bottom center",   //when bottom of element crosses center of page
+              toggleActions: "play none none none",
+          }
+        });
+      })
     },
     destroyed () {
       document.body.classList.remove('home')
@@ -193,6 +199,7 @@ div.wrapper {
         font-family: 'Lato', sans-serif;
         font-size: 5vw;
         font-size: min(5vw, 23px);
+        filter: blur(0.1px);
       }
 
 

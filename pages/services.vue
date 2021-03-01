@@ -128,9 +128,9 @@ export default {
         duration: 0.5,
         scrollTrigger: {
             trigger: bodyText,
-            start: "center bottom", //when center of element crosses bottom of page
+            start: "top 80%", //when top of element crosses 80% from of page
             end: "bottom center",   //when bottom of element crosses center of page
-            toggleActions: "restart none none none",
+            toggleActions: "play none none none",
         }
       });
     })
