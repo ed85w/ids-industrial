@@ -141,6 +141,15 @@ export default {
 
 <style lang="scss">
 
+h3#test::before { 
+  display: block; 
+  content: " "; 
+  margin-top: -285px; 
+  height: 285px; 
+  visibility: hidden; 
+  pointer-events: none;
+}
+
 h5 {
   font-family: 'Lato', sans-serif;
 }
@@ -166,11 +175,11 @@ h5 {
 
 .landing-services {
     background: linear-gradient(rgba($ids-blue, 0.2), rgba($ids-blue, 0.2)), url('~static/img/eggborough-power-station.jpg') 50% 50% / cover no-repeat;
-    // background-attachment: fixed;
 }
 
 #principal {
-    background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('~static/img/sarens-crane.jpeg') center 80% / cover no-repeat;
+  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('~static/img/sarens-crane.jpeg') center 80% / cover no-repeat;
+  scroll-padding-top: 50px;
 }
 
 #explosive-demolition {

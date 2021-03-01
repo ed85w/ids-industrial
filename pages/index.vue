@@ -1,80 +1,80 @@
 <template>
-    <div class="wrapper page-content">
-        <div class="container-fluid">
-          <div class="row justify-content-center align-items-end pb-5 landing-home">
-            <b-carousel
-              id="carousel-fade"
-              style="text-shadow: 0px 0px 2px #000"
-              fade
-            >
-              <b-carousel-slide
-                img-src="~static/img/power-station-carousel.jpeg"
-                img-alt="an image of a power station"
-                class="carousel-img carousel-1"
-              ></b-carousel-slide>
-              <b-carousel-slide
-                img-src="~static/img/greece-carousel.jpeg"
-                img-alt="an image of a refinery in greece"
-                class="carousel-img carousel-2"
-              ></b-carousel-slide>
-              <b-carousel-slide
-                img-src="~static/img/teeside-carousel.jpg"
-                img-alt="an image of teeside power station"
-                class="carousel-img carousel-3"
-              ></b-carousel-slide>
-            </b-carousel>
-            <div id="carousel-overlay" class="col-12 col-md-10 col-lg-8 text-right pb-3">
-              <h1 class="m-0 pb-5 home-title">Sustainable, Decommissioning<br class="d-none d-md-block"> & <br class="d-md-none">Demolition Management</h1>
-              <h5 class="m-0 pb-5 home-tagline">Safe and cost-effective project management<br class="d-none d-md-block"> from conception <br class="d-md-none">through to completion</h5>
-              <button class="btn yellow-btn"><nuxt-link to="/services">Our services</nuxt-link></button>
-            </div>
-          </div>
+  <div class="wrapper page-content">
+    <div class="container-fluid">
+      <div class="row justify-content-center align-items-end pb-5 landing-home">
+        <b-carousel
+          id="carousel-fade"
+          style="text-shadow: 0px 0px 2px #000"
+          fade
+        >
+          <b-carousel-slide
+            img-src="~static/img/power-station-carousel.jpeg"
+            img-alt="an image of a power station"
+            class="carousel-img carousel-1"
+          ></b-carousel-slide>
+          <b-carousel-slide
+            img-src="~static/img/greece-carousel.jpeg"
+            img-alt="an image of a refinery in greece"
+            class="carousel-img carousel-2"
+          ></b-carousel-slide>
+          <b-carousel-slide
+            img-src="~static/img/teeside-carousel.jpg"
+            img-alt="an image of teeside power station"
+            class="carousel-img carousel-3"
+          ></b-carousel-slide>
+        </b-carousel>
+        <div id="carousel-overlay" class="col-12 col-md-10 col-lg-8 text-right pb-3">
+          <h1 class="m-0 pb-5 home-title">Sustainable, Decommissioning<br class="d-none d-md-block"> & <br class="d-md-none">Demolition Management</h1>
+          <h5 class="m-0 pb-5 home-tagline">Safe and cost-effective project management<br class="d-none d-md-block"> from conception <br class="d-md-none">through to completion</h5>
+          <button class="btn yellow-btn"><nuxt-link to="/services">Our services</nuxt-link></button>
         </div>
-        <!-- about section  -->
-        <section id="about" class="container-fluid">
-          <div class="row pt-0 pt-md-5 pb-3 pb-md-5 justify-content-center ">
-            <div class="col-12 col-md-10 col-lg-8 pt-5 pb-5">
-              <h3 class="sub-title">
-                About Us
-              </h3>
-              <p class="body-text font-weight-bold">IDS Industrial is an internationally recognised decommissioning & demolition consultancy with extensive experience in high hazardous industries.</p>
-              <p class="body-text">Our experienced team has been committed to providing total solutions for the safe, environmentally secure and cost-effective delivery of decommissioning, decontamination, dismantling and demolition projects worldwide.</p>
-              <p class="body-text">We operate a ‘One Team, One Goal’ approach to projects where we strongly promote collaborative working between client, project team and contractor to deliver complex and challenging projects safely.</p>
-              <p class="body-text">Our specialist industries include Manufacturing & Industrial, Oil & Gas, Power Generation, Petrochemical and Pharmaceutical.</p>
-              <button class="btn yellow-btn mt-4"><nuxt-link to="/services">Services</nuxt-link></button>
-            </div>
-          </div>
-        </section>
-        <!-- why choose IDS section  -->
-        <section id="why-ids" class="container-fluid image-background-section">
-          <div class="row pt-3 pt-md-5 pb-3 pb-md-5 justify-content-center">
-            <div class="col-12 col-md-10 col-lg-8 pt-5 pb-5">
-              <h3 class="sub-title">
-                Why choose<br class="d-none d-lg-block"> IDS Industrial?
-              </h3>
-              <ul class="pl-3">
-                <li class="why-li">IDS Industrial offers a one stop shop and a range of services that exceed expectations, from initial project planning through to decommissioning, demolition and site remediation.</li>
-                <li class="why-li">Extensive experience in construction and demolition safety management ensuring industry best practices is achieved to reduce both SHE and operational risk to clients.</li>
-                <li class="pb-0 why-li">Project Management capabilities to meet the most demanding of projects.</li>
-              </ul>
-            </div>
-          </div>
-        </section>
-        <!-- experience section  -->
-        <section class="container-fluid">
-          <div class="row pt-3 pt-md-5 pb-3 pb-md-5 justify-content-center">
-            <div class="col-12 col-md-10 col-lg-8 pt-5 pb-5">
-              <h3 class="sub-title">
-                Our Experience
-              </h3>
-              <p class="body-text">IDS have over 35 years’ experience carrying out decommissioning, dismantling & demolition in some of the most demanding, hazardous and safety critical industries in the world.</p>
-              <p class="body-text">We have extensive experience working in the UK and Internationally with multiple projects completed in the Middle East as well as providing consultancy support on tendering opportunities in the Far East.</p>
-              <p class="body-text">We have the in-house capabilities to manage the entire decommissioning and demolition phases to offer a complete project solution with the aim of exceeding clients’ expectations.</p>
-              <button class="btn yellow-btn mt-4"><nuxt-link to="/contact">Contact us</nuxt-link></button>
-            </div>
-          </div>
-        </section>
+      </div>
     </div>
+    <!-- about section  -->
+    <section id="about" class="container-fluid">
+      <div class="row pt-3 pb-3 pt-md-5  pb-md-5 justify-content-center ">
+        <div class="col-12 col-md-10 col-lg-8 pt-5 pb-5">
+          <h3 class="sub-title">
+            About Us
+          </h3>
+          <p class="body-text font-weight-bold">IDS Industrial is an internationally recognised decommissioning & demolition consultancy with extensive experience in high hazardous industries.</p>
+          <p class="body-text">Our experienced team has been committed to providing total solutions for the safe, environmentally secure and cost-effective delivery of decommissioning, decontamination, dismantling and demolition projects worldwide.</p>
+          <p class="body-text">We operate a ‘One Team, One Goal’ approach to projects where we strongly promote collaborative working between client, project team and contractor to deliver complex and challenging projects safely.</p>
+          <p class="body-text">Our specialist industries include Manufacturing & Industrial, Oil & Gas, Power Generation, Petrochemical and Pharmaceutical.</p>
+          <button class="btn yellow-btn mt-4"><nuxt-link to="/services">Services</nuxt-link></button>
+        </div>
+      </div>
+    </section>
+    <!-- why choose IDS section  -->
+    <section id="why-ids" class="container-fluid image-background-section">
+      <div class="row pt-3 pt-md-5 pb-3 pb-md-5 justify-content-center">
+        <div class="col-12 col-md-10 col-lg-8 pt-5 pb-5">
+          <h3 class="sub-title">
+            Why choose<br class="d-none d-lg-block"> IDS Industrial?
+          </h3>
+          <ul class="pl-3">
+            <li class="why-li">IDS Industrial offers a one stop shop and a range of services that exceed expectations, from initial project planning through to decommissioning, demolition and site remediation.</li>
+            <li class="why-li">Extensive experience in construction and demolition safety management ensuring industry best practices is achieved to reduce both SHE and operational risk to clients.</li>
+            <li class="pb-0 why-li">Project Management capabilities to meet the most demanding of projects.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <!-- experience section  -->
+    <section class="container-fluid">
+      <div class="row pt-3 pt-md-5 pb-3 pb-md-5 justify-content-center">
+        <div class="col-12 col-md-10 col-lg-8 pt-5 pb-5">
+          <h3 class="sub-title">
+            Our Experience
+          </h3>
+          <p class="body-text">IDS have over 35 years’ experience carrying out decommissioning, dismantling & demolition in some of the most demanding, hazardous and safety critical industries in the world.</p>
+          <p class="body-text">We have extensive experience working in the UK and Internationally with multiple projects completed in the Middle East as well as providing consultancy support on tendering opportunities in the Far East.</p>
+          <p class="body-text">We have the in-house capabilities to manage the entire decommissioning and demolition phases to offer a complete project solution with the aim of exceeding clients’ expectations.</p>
+          <button class="btn yellow-btn mt-4"><nuxt-link to="/contact">Contact us</nuxt-link></button>
+        </div>
+      </div>
+    </section>
+  </div>
 </template>
 
 <script>

@@ -4,7 +4,6 @@ export default {
   router: {
     base: '/ids-industrial/'
   },
-
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
     title: 'ids-industrial',
@@ -52,18 +51,6 @@ export default {
   styleResources: {
     scss: ['./assets/scss/*.scss']
   },
-  // smooth scrolling 
-  // router: {
-  //   scrollBehavior(to) {
-  //     if (to.hash) {
-  //       return window.scrollTo({
-  //         top: document.querySelector(to.hash).offsetTop - 30,
-  //         behavior: 'smooth'
-  //       })
-  //     }
-  //     return window.scrollTo({ top: 0, behavior: 'smooth' })
-  //   }
-  // },
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
   }

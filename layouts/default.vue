@@ -104,6 +104,11 @@ h5.page-tagline {
 /* // Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
 
+  // html {
+  //   scroll-margin-top: 80px;
+  //   scroll-snap-margin-top: 80px;
+  // }
+
   p.body-text,
   li {
     font-size: 18px;

@@ -3,7 +3,7 @@
     <div class="row justify-content-center">
       <div class="col-12 col-md-10 col-lg-8 pt-3 pb-3 pt-md-5 pb-md-5">
         <div class="row">
-          <div class="col-12 col-sm-6 order-sm-2 mb-3 mb-md-0 text-center text-sm-right">
+          <div class="col-12 col-sm-6 order-sm-2 mb-5 mb-md-0 text-center text-sm-right">
             <img src="~static/img/IDS-logo-white.png" alt="IDS industrial logo" class="footer-logo">
           </div>
           <div class="col-12 col-sm-6 order-sm-1 text-center text-sm-left">

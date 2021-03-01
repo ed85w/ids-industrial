@@ -168,7 +168,7 @@ body {
                 padding: 10px 0;
 
                 img.logo {
-                    height: 50px;
+                    height: 46px;
 
                     &.logo-white {
                         display: none;
@@ -275,10 +275,10 @@ body {
                                 padding: 0;
                                 transition: max-height 0.5s ease;
 
-                                li {
-                                    // background: $ids-blue;
+                                li.subitem {
+                                    background: $ids-yellow;
                                 a {
-                                    // color: $ids-yellow;
+                                    color: $ids-blue;
                                 }
                             }
                             }
