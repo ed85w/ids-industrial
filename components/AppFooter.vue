@@ -4,7 +4,7 @@
       <div class="col-12 col-md-10 col-lg-8 pt-3 pb-3 pt-md-5 pb-md-5">
         <div class="row">
           <div class="col-12 col-sm-6 order-sm-2 mb-3 mb-md-0 text-center text-sm-right">
-            <img src="~static/img/ids-industrial-logo.png" alt="IDS industrial logo" class="footer-logo">
+            <img src="~static/img/IDS-logo-white.png" alt="IDS industrial logo" class="footer-logo">
           </div>
           <div class="col-12 col-sm-6 order-sm-1 text-center text-sm-left">
             <p><span>IDS Industrial:</span><br>
@@ -39,7 +39,7 @@ export default {
     position: relative;
     top: 50%;
     transform: translateY(-50%);
-    height: 100px;
+    height: 55px;
 
   }
 

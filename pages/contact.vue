@@ -36,7 +36,7 @@
                             </div>
                         </div>
 
-                        <button type="btn" class="btn yellow-btn mt-4" aria-label="submit form">
+                        <button type="btn" class="btn yellow-btn contact-btn mt-4" aria-label="submit form">
                         Submit
                         </button>
                     </div>
@@ -162,6 +162,10 @@ input,
 textarea {
     border: none;
     border-radius: 0;
+}
+
+.contact-btn {
+    margin-left: 4px;
 }
 
 /* tablets and above */

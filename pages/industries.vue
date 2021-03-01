@@ -173,6 +173,24 @@ export default {
         }
       });
     })
+    // var fullImg = gsap.utils.toArray('.full-img');
+    // fullImg.forEach((fullImg) => {
+
+    //   // fullImg.style.objectPosition = `50% ${-innerHeight / 2}px`;
+    //   fullImg.style.objectPosition = `50% ${(-innerHeight / 2) - 200}px`;
+
+    //   gsap.to(fullImg, { 
+    //     // objectPosition: `50% ${innerHeight / 2}px`,
+    //     objectPosition: `50% ${(innerHeight / 2) - 200}px`,
+    //     ease: "none",
+    //     scrollTrigger: {
+    //       trigger: fullImg,
+    //         start: "top bottom", //when top of element crosses 80% from of page
+    //         end: "bottom top",   //when bottom of element crosses center of page
+    //         scrub: true
+    //     }
+    //   });
+    // })
   }, 
 }
 </script>
@@ -187,6 +205,7 @@ img.full-img {
   width: 100%;
   height: 200px;
   object-fit: cover;
+  object-position: 50% 50%;
 }
 
 

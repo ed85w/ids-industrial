@@ -1,17 +1,18 @@
 <template>
     <div class="container-fluid" >
-        <div id="nav-row" class="row justify-content-center" :class="{ scrolled : scrolled, active: showMobileMenu }">
+        <div id="nav-row" class="test row justify-content-center" :class="{ scrolled : scrolled, active: showMobileMenu }">
             <nav id="navbar1" class="col-12 col-md-10 col-lg-8 pt-0 pb-0 navbar" :class="{ scrolled : scrolled, active: showMobileMenu }">
                 <div class="logo">
                     <NuxtLink to="/" exact>
                         <div class="logo-container">
-                            <img class="logo" src="~static/img/ids-industrial-logo.png" alt="IDS Industrial Logo">
+                            <img class="logo logo-white" src="~static/img/IDS-logo-white.png" alt="IDS Industrial Logo in white">
+                            <img class="logo logo-colour" src="~static/img/IDS-logo-colour.png" alt="IDS Industrial Logo in colour">
                         </div>
                     </NuxtLink>
                 </div>
                 <ul class="nav-menu p-0">
                     <!-- item with subitems  -->
-                    <li class="item has-submenu pb-0">
+                    <li class="item has-submenu">
                         <NuxtLink to="/#about" tabindex="0" exact>About</NuxtLink>
                         <button type="button" class="submenu-toggle ml-3 ml-md-1" aria-expanded="false" aria-label="expand about submenu" v-on:click="toggleItem($event)">
                             <span class="submenu-open-icon">
@@ -26,7 +27,7 @@
                     </li>
                     <!-- end of item with subitems  -->
                     <!-- item with subitems  -->
-                    <li class="item has-submenu pb-0">
+                    <li class="item has-submenu">
                         <NuxtLink to="/services" tabindex="0" exact>Services</NuxtLink>
                         <button type="button" class="submenu-toggle ml-3 ml-md-1" aria-expanded="false" aria-label="expand services submenu" v-on:click="toggleItem($event)">
                             <span class="submenu-open-icon">
@@ -45,7 +46,7 @@
                     </li>
                     <!-- end of item with subitems  -->
                     <!-- item with subitems  -->
-                    <li class="item has-submenu pb-0">
+                    <li class="item has-submenu">
                         <NuxtLink to="/industries" tabindex="0" exact>Industries</NuxtLink>
                         <button type="button" class="submenu-toggle ml-3 ml-md-1" aria-expanded="false" aria-label="expand industries submenu" v-on:click="toggleItem($event)">
                             <span class="submenu-open-icon">
@@ -163,9 +164,21 @@ body {
 
         #navbar1 {
 
+            div.logo-container {
+                padding: 10px 0;
 
-            img.logo {
-                height: 70px;
+                img.logo {
+                    height: 50px;
+
+                    &.logo-white {
+                        display: none;
+                    }
+
+                    &.logo-colour {
+                        display: block;
+                    }
+                }
+
             }
 
             // burger
@@ -209,6 +222,7 @@ body {
                     margin: 0;
                     text-align: left;
                     padding: 10px 10px 10px 20px;
+                    
 
                     a {
                         color: $ids-blue;
@@ -258,6 +272,13 @@ body {
                                 text-align: center;
                                 padding: 0;
                                 transition: max-height 0.5s ease;
+
+                                li {
+                                    // background: $ids-blue;
+                                a {
+                                    // color: $ids-yellow;
+                                }
+                            }
                             }
                         }
                     }
@@ -299,9 +320,37 @@ body.home {
                     background: white;
                 }
             }
+
+            div.logo-container {
+                // padding: 10px 0;
+                img.logo {
+
+                    &.logo-white {
+                        display: block;
+                    }
+
+                    &.logo-colour {
+                        display: none;
+                    }
+                }
+            }
             // if active or scrolled (chage from white to blue) 
             &.active,
             &.scrolled {
+
+                div.logo-container {
+                    img.logo {
+
+                        &.logo-white {
+                            display: none;
+                        }
+
+                        &.logo-colour {
+                            display: block;
+                        }
+                    }
+                }
+
 
                 #burger-menu {
                     div {
@@ -313,10 +362,7 @@ body.home {
     }
 
     #nav-row.scrolled {
-
-        min-height: 75px;
         background: white;
-
     }
 }
 
@@ -425,7 +471,6 @@ body {
 
                         li {
                             background: $ids-blue;
-                            // line-height: 1;
                             padding: 10px 5px;
                             background: #2a4b9beb;
                             border-top: 3px solid #2a4b9b;

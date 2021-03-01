@@ -113,8 +113,8 @@ export default {
 
       // gsap timeline to animate landing page 
       var tl = gsap.timeline({})
-      tl.from("#carousel-overlay > h1", {duration:2, x: 100, opacity: 0, ease: Power3.easeOut },1)
-      tl.from("#carousel-overlay > h5", {duration:1.5, y: 50, opacity: 0, filter: "blur(20px)", ease: Power3.easeOut },2)
+      tl.from(".home-title", {duration:2, x: 100, opacity: 0, ease: Power3.easeOut },1)
+      tl.from(".home-tagline", {duration:1.5, y: 50, opacity: 0, filter: "blur(20px)", ease: Power3.easeOut },2)
 
       // scroll animations 
       var bodyText = gsap.utils.toArray('.body-text');
