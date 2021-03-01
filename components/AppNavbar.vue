@@ -372,7 +372,8 @@ body {
                     padding: 1px;
                     text-align: center;
 
-                    a {
+                    a { 
+                        width: initial;
                         display: block;
                         padding: 5px;
                         font-size: 14px;
