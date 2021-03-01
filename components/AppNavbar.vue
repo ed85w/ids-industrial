@@ -1,6 +1,6 @@
 <template>
     <div class="container-fluid" >
-        <div id="nav-row" class="test row justify-content-center" :class="{ scrolled : scrolled, active: showMobileMenu }">
+        <div id="nav-row" class="row justify-content-center" :class="{ scrolled : scrolled, active: showMobileMenu }">
             <nav id="navbar1" class="col-12 col-md-10 col-lg-8 pt-0 pb-0 navbar" :class="{ scrolled : scrolled, active: showMobileMenu }">
                 <div class="logo">
                     <NuxtLink to="/" exact>
