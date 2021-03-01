@@ -24,7 +24,15 @@
           ></b-carousel-slide>
         </b-carousel>
         <div id="carousel-overlay" class="col-12 col-md-10 col-lg-8 text-right pb-3">
-          <h1 class="m-0 pb-5 home-title">Sustainable, Decommissioning<br class="d-none d-md-block"> & <br class="d-md-none">Demolition Management</h1>
+          <h1 class="m-0 pb-5 home-title" 
+            v-gsap.from="{
+              duration:2, 
+              x: 100, 
+              opacity: 0, 
+              ease: 'Power3.easeOut'
+            }">
+            Sustainable, Decommissioning<br class="d-none d-md-block"> & <br class="d-md-none">Demolition Management
+          </h1>
           <h5 class="m-0 pb-5 home-tagline">Safe and cost-effective project management<br class="d-none d-md-block"> from conception <br class="d-md-none">through to completion</h5>
           <button class="btn yellow-btn"><nuxt-link to="/services">Our services</nuxt-link></button>
         </div>
@@ -112,9 +120,9 @@ export default {
       gsap.registerPlugin(ScrollTrigger)
 
       // gsap timeline to animate landing page 
-      var tl = gsap.timeline({})
-      tl.from(".home-title", {duration:2, x: 100, opacity: 0, ease: Power3.easeOut },1)
-      tl.from(".home-tagline", {duration:1.5, y: 50, opacity: 0, filter: "blur(20px)", ease: Power3.easeOut },2)
+      // var tl = gsap.timeline({})
+      // tl.from(".home-title", {duration:2, x: 100, opacity: 0, ease: Power3.easeOut },1)
+      // tl.from(".home-tagline", {duration:1.5, y: 50, opacity: 0, filter: "blur(20px)", ease: Power3.easeOut },2)
 
       // scroll animations 
       var bodyText = gsap.utils.toArray('.body-text');
