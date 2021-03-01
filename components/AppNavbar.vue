@@ -12,14 +12,14 @@
                 </div>
                 <ul class="nav-menu p-0">
                     <!-- item with subitems  -->
-                    <li class="item has-submenu">
+                    <li class="pb-0 item has-submenu">
                         <NuxtLink to="/#about" tabindex="0" exact>About</NuxtLink>
                         <button type="button" class="submenu-toggle ml-3 ml-md-1" aria-expanded="false" aria-label="expand about submenu" v-on:click="toggleItem($event)">
                             <span class="submenu-open-icon">
                                 <i class="fa fa-caret-down"></i>
                             </span>
                         </button>
-                        <ul class="submenu about-submenu">
+                        <ul class="pb-0 submenu about-submenu">
                             <li class="subitem"><a href="./docs/2021 IDS Industrial - For Clients.pdf" target="_blank">Company Brochure</a></li>
                             <li class="subitem"><a href="./docs/20210101 Health and Safety Policy Statement.pdf" target="_blank">Health & Safety Policy Statement</a></li>
                             <li class="subitem"><a href="./docs/20210101 Environmental Policy Statement.pdf" target="_blank">Environmental Policy Statement</a></li>
@@ -27,7 +27,7 @@
                     </li>
                     <!-- end of item with subitems  -->
                     <!-- item with subitems  -->
-                    <li class="item has-submenu">
+                    <li class="pb-0 item has-submenu">
                         <NuxtLink to="/services" tabindex="0" exact>Services</NuxtLink>
                         <button type="button" class="submenu-toggle ml-3 ml-md-1" aria-expanded="false" aria-label="expand services submenu" v-on:click="toggleItem($event)">
                             <span class="submenu-open-icon">
@@ -46,7 +46,7 @@
                     </li>
                     <!-- end of item with subitems  -->
                     <!-- item with subitems  -->
-                    <li class="item has-submenu">
+                    <li class="pb-0 item has-submenu">
                         <NuxtLink to="/industries" tabindex="0" exact>Industries</NuxtLink>
                         <button type="button" class="submenu-toggle ml-3 ml-md-1" aria-expanded="false" aria-label="expand industries submenu" v-on:click="toggleItem($event)">
                             <span class="submenu-open-icon">
@@ -183,11 +183,13 @@ body {
 
             // burger
             #burger-menu {
-                position: absolute;
+                display: block;
+                position: fixed;
                 top: 14px;
                 right: 9px;
                 background: transparent;
                 border: none;
+                z-index: 9999;
 
                 .burger-line {
                     display: block;
@@ -221,7 +223,7 @@ body {
                     width: 100%;
                     margin: 0;
                     text-align: left;
-                    padding: 10px 10px 10px 20px;
+                    padding: 25px 20px;
                     
 
                     a {
