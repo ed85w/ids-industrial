@@ -114,7 +114,7 @@ export default {
       // gsap timeline to animate landing page 
       var tl = gsap.timeline({})
       tl.from(".home-title", {duration:2, x: 100, opacity: 0, ease: Power3.easeOut },1)
-      tl.from(".home-tagline", {duration:1.5, y: 50, opacity: 0, 'webkitFilter': 'blur(15px)', ease: Power3.easeOut },2)
+      tl.from(".home-tagline", {duration:1.5, y: 50, opacity: 0, ease: Power3.easeOut },2)
 
       // scroll animations 
       var bodyText = gsap.utils.toArray('.body-text');
@@ -206,8 +206,6 @@ div.wrapper {
         font-family: 'Lato', sans-serif;
         font-size: 5vw;
         font-size: min(5vw, 23px);
-        filter: blur(0.1px);
-        -webkit-filter: blur(0.1px);
       }
 
 
