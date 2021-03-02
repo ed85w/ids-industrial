@@ -235,6 +235,7 @@ body {
                     
 
                     a {
+                        display: block;
                         color: white;
                         transition: 0.3s ease-in;
                         padding: 25px 20px;                        
@@ -289,6 +290,7 @@ body {
                                 a {
                                     display: block;
                                     color: $ids-blue;
+                                    transition: 0s;
                                 }
                             }
                             }

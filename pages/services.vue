@@ -16,7 +16,7 @@
               <h3 class="sub-title link-title" id="feasibility">
                 Project Feasibility Studies &<br>Commercial Planning
               </h3>
-              <p class="body-text">IDS can provide clients with early assessments of projects, provide budgeting advice and assist with any outline engagement with stakeholders and local authorities.</p>
+              <p class="body-text font-weight-bold">IDS can provide clients with early assessments of projects, provide budgeting advice and assist with any outline engagement with stakeholders and local authorities.</p>
               <p class="body-text">We can also assist in the procurement of specialist services for decommissioning, dismantling and demolition.</p>
               <button class="btn yellow-btn mt-4"><nuxt-link to="/contact">Contact</nuxt-link></button>
             </div>
