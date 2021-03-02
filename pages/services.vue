@@ -10,10 +10,10 @@
           </div>
         </div>
         <!-- feasibility section  -->
-        <section id="feasibility" class="container-fluid">
+        <section class="container-fluid feasibility">
           <div class="row pt-5 pb-5 justify-content-center">
             <div class="col-12 col-md-10 col-lg-8 pt-3 pb-3 pt-md-5 pb-md-5">
-              <h3 class="sub-title">
+              <h3 class="sub-title link-title" id="feasibility">
                 Project Feasibility Studies &<br>Commercial Planning
               </h3>
               <p class="body-text">IDS can provide clients with early assessments of projects, provide budgeting advice and assist with any outline engagement with stakeholders and local authorities.</p>
@@ -23,10 +23,10 @@
           </div>
         </section>
         <!-- Principal Designer section  -->
-        <section id="principal" class="container-fluid image-background-section">
+        <section class="container-fluid image-background-section principal">
           <div class="row pt-5 pb-5 justify-content-center ">
             <div class="col-12 col-md-10 col-lg-8 pt-3 pb-3 pt-md-5 pb-md-5">
-              <h3 class="sub-title">
+              <h3 class="sub-title link-title" id="principal">
                 Principal Designer Duties &<br>Comprehensive HSE Management
               </h3>
               <p class="body-text">We provide a tailored service to meet clients’ needs.</p>
@@ -36,10 +36,10 @@
           </div>
         </section>
         <!-- demolition section  -->
-        <section id="demolition" class="container-fluid">
-          <div class="row pt-5 pb-5 justify-content-center">
+        <section  class="container-fluid">
+          <div class="row pt-5 pb-5 justify-content-center demolition">
             <div class="col-12 col-md-10 col-lg-8 pt-3 pb-3 pt-md-5 pb-md-5">
-              <h3 class="sub-title">
+              <h3 class="sub-title link-title" id="demolition">
                 Demolition Project <br class="d-md-none">Management
               </h3>
                 <p class="body-text font-weight-bold">We have 35 years’ in-house experience of managing complex decommissioning & demolition projects from Nuclear Sites to City Centre Demolition.</p>              
@@ -49,10 +49,10 @@
           </div>
         </section>
         <!-- explosive-demolition section  -->
-        <section id="explosive-demolition" class="container-fluid image-background-section">
+        <section class="container-fluid image-background-section explosive-demolition">
           <div class="row pt-5 pb-5 justify-content-center ">
             <div class="col-12 col-md-10 col-lg-8 pt-3 pb-3 pt-md-5 pb-md-5">
-              <h3 class="sub-title">
+              <h3 class="sub-title link-title" id="explosive-demolition">
                 Explosive Demolition <br class="d-md-none">Management
               </h3>
               <p class="body-text">We have in-house experience of managing the planning and execution phases of explosive events, from City Centre blasting through to blasting within Power Stations and Oil Refineries.</p>
@@ -62,10 +62,10 @@
           </div>
         </section>
         <!-- temporary-works section  -->
-        <section id="temporary-works" class="container-fluid">
+        <section class="container-fluid temporary-works">
           <div class="row pt-5 pb-5 justify-content-center ">
             <div class="col-12 col-md-10 col-lg-8 pt-3 pb-3 pt-md-5 pb-md-5">
-              <h3 class="sub-title">
+              <h3 class="sub-title link-title" id="temporary-works">
                 Temporary Works <br class="d-md-none">Management
               </h3>
               <p class="body-text font-weight-bold">Temporary works management in demolition is often overlooked. It is a fundamental aspect of any technical demolition project from pre-weakening, to propping, to explosive demolition.</p>
@@ -75,10 +75,10 @@
           </div>
         </section>
         <!-- structural-engineering section  -->
-        <section id="structural-engineering" class="container-fluid image-background-section">
+        <section class="container-fluid image-background-section structural-engineering">
           <div class="row pt-5 pb-5 justify-content-center ">
-            <div class="col-12 col-md-10 col-lg-8 pt-3 pb-3 pt-md-5 pb-md-5">
-              <h3 class="sub-title">
+            <div class="col-12 col-md-10 col-lg-8 pt-3 pb-3 pt-md-5 pb-md-5" id="structural-engineering">
+              <h3 class="sub-title link-title">
                 Structural Engineering
               </h3>
               <p class="body-text">IDS can assist clients in the planning of demolition projects and provide detailed structural assessments of existing structures to assist demolition contractors in deciding on suitable methods of demolition.</p>
@@ -88,10 +88,10 @@
           </div>
         </section>
         <!-- remediation section  -->
-        <section id="remediation" class="container-fluid">
+        <section class="container-fluid remediation">
           <div class="row pt-5 pb-5 justify-content-center ">
             <div class="col-12 col-md-10 col-lg-8 pt-3 pb-3 pt-md-5 pb-md-5">
-              <h3 class="sub-title">
+              <h3 class="sub-title link-title" id="remediation">
                 Remediation Management
               </h3>
               <p class="body-text font-weight-bold">The cost to remediate land can be extensive. Early engagement with specialists can reduce commercial risk of a project greatly.</p>
@@ -141,15 +141,6 @@ export default {
 
 <style lang="scss">
 
-h3#test::before { 
-  display: block; 
-  content: " "; 
-  margin-top: -285px; 
-  height: 285px; 
-  visibility: hidden; 
-  pointer-events: none;
-}
-
 h5 {
   font-family: 'Lato', sans-serif;
 }
@@ -177,16 +168,16 @@ h5 {
     background: linear-gradient(rgba($ids-blue, 0.2), rgba($ids-blue, 0.2)), url('~static/img/eggborough-power-station.jpg') 50% 50% / cover no-repeat;
 }
 
-#principal {
+.principal {
   background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('~static/img/sarens-crane.jpeg') center 80% / cover no-repeat;
   scroll-padding-top: 50px;
 }
 
-#explosive-demolition {
+.explosive-demolition {
     background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('~static/img/eggborough-landscape.jpg') center center / cover no-repeat;
 }
 
-#structural-engineering {
+.structural-engineering {
   background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('~static/img/dortmund-steel.jpg') center 80% / cover no-repeat;
 }
 

@@ -124,13 +124,9 @@ export default {
 <style lang="scss" scoped>
 
 .landing-contact {
-    background: linear-gradient(rgba($ids-blue, 0.2), rgba($ids-blue, 0.2)), url('~static/img/petrochemical.jpg') 30% center / cover no-repeat;
+    background: linear-gradient(rgba($ids-blue, 0.7), rgba($ids-blue, 0.7)), url('~static/img/petrochemical.jpg') 30% center / cover no-repeat;
 
 }
-
-// .contact-form {
-//     background: linear-gradient(rgba($ids-blue, 0.2), rgba($ids-blue, 0.2)), url('~static/img/dortmund-steel.jpg') center 80% / cover no-repeat;
-// }
 
 h5.director-name {
     font-family: 'Audiowide', cursive;

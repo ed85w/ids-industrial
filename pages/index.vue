@@ -31,10 +31,10 @@
       </div>
     </div>
     <!-- about section  -->
-    <section id="about" class="container-fluid">
+    <section  class="container-fluid">
       <div class="row pt-3 pb-3 pt-md-5  pb-md-5 justify-content-center ">
         <div class="col-12 col-md-10 col-lg-8 pt-5 pb-5">
-          <h3 class="sub-title">
+          <h3 class="sub-title link-title" id="about">
             About Us
           </h3>
           <p class="body-text font-weight-bold">IDS Industrial is an internationally recognised decommissioning & demolition consultancy with extensive experience in high hazardous industries.</p>
@@ -191,6 +191,7 @@ div.wrapper {
 
       #carousel-overlay {
         z-index: 2;
+        overflow: hidden;
 
       }
       h1.home-title {

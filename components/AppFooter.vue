@@ -29,7 +29,7 @@ export default {
 <style scoped lang="scss">
 
 .footer.container-fluid {
-  background: linear-gradient(rgba(0, 9, 92, 0.699), rgba(4, 17, 139, 0.699)), url('~static/img/ellesmere-port.jpg') center 60% / cover no-repeat;
+  background: linear-gradient(rgba($ids-blue, 0.699), rgba($ids-blue, 0.699)), url('~static/img/ellesmere-port.jpg') center 60% / cover no-repeat;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;

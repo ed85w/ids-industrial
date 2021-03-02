@@ -30,6 +30,16 @@ export default {
   font-family: 'Audiowide', cursive;
 }
 
+// offset scroll to links
+.link-title::before { 
+  display: block; 
+  content: " "; 
+  margin-top: -100px; 
+  height: 100px; 
+  visibility: hidden; 
+  pointer-events: none;
+}
+
 .page-content {
   margin-top: $page-margin-top-mob;
 }
@@ -103,11 +113,6 @@ h5.page-tagline {
 }
 /* // Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
-
-  // html {
-  //   scroll-margin-top: 80px;
-  //   scroll-snap-margin-top: 80px;
-  // }
 
   p.body-text,
   li {

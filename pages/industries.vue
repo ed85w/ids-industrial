@@ -10,11 +10,11 @@
       </div>
     </div>
     <!-- Manufacturing   -->
-    <section class="container-fluid" id="manufacturing">
+    <section class="container-fluid manufacturing">
       <div class="row pt-5 pb-5 pb-md-0 justify-content-center">
         <div class="col-12 col-md-10 col-lg-8 pt-3 pb-3 pt-md-5 pb-md-5">
           <div class="title-container">
-            <h3 class="m-0 sub-title title-cover">Manufacturing & Industrial</h3>
+            <h3 class="m-0 sub-title title-cover link-title" id="manufacturing">Manufacturing & Industrial</h3>
             <div class="yellow-line"></div>
           </div>
         </div>
@@ -36,11 +36,11 @@
       </div>
     </section>
     <!-- Oil & Gas   -->
-    <section class="container-fluid" id="oil-and-gas">
+    <section class="container-fluid oil-and-gas">
       <div class="row pt-5 pb-5 justify-content-center">
         <div class="col-12 col-md-10 col-lg-8 pt-3 pb-3 pt-md-5 pb-md-5">
           <div class="title-container">
-            <h3 class="m-0 sub-title title-cover">Oil & Gas</h3>
+            <h3 class="m-0 sub-title title-cover link-title" id="oil-and-gas">Oil & Gas</h3>
             <div class="yellow-line"></div>
           </div>
         </div>
@@ -62,11 +62,11 @@
       </div>
     </section>
     <!-- power-generation   -->
-    <section class="container-fluid" id="power-generation">
+    <section class="container-fluid power-generation">
       <div class="row pt-5 pb-5 pb-md-0 justify-content-center">
         <div class="col-12 col-md-10 col-lg-8 pt-3 pb-3 pt-md-5 pb-md-5">
           <div class="title-container">
-            <h3 class="m-0 sub-title title-cover">Power Generation</h3>
+            <h3 class="m-0 sub-title title-cover link-title" id="power-generation">Power Generation</h3>
             <div class="yellow-line"></div>
           </div>
         </div>
@@ -89,11 +89,11 @@
       </div>
     </section>
     <!-- petrochemical   -->
-    <section class="container-fluid" id="petrochemical">
+    <section class="container-fluid petrochemical">
       <div class="row pt-5 pb-5 justify-content-center">
         <div class="col-12 col-md-10 col-lg-8 pt-3 pb-3 pt-md-5 pb-md-5">
           <div class="title-container">
-            <h3 class="m-0 sub-title title-cover">Petrochemical</h3>
+            <h3 class="m-0 sub-title title-cover link-title" id="petrochemical">Petrochemical</h3>
             <div class="yellow-line"></div>
           </div>
         </div>
@@ -117,11 +117,11 @@
       </div>
     </section>
     <!-- Pharmaceutical   -->
-    <section class="container-fluid" id="pharmaceutical">
+    <section class="container-fluid pharmaceutical">
       <div class="row pt-5 pb-5 justify-content-center">
         <div class="col-12 col-md-10 col-lg-8 pt-3 pb-3 pt-md-5 pb-md-5">
           <div class="title-container">
-            <h3 class="m-0 sub-title title-cover">Pharmaceutical</h3>
+            <h3 class="m-0 sub-title title-cover link-title" id="pharmaceutical">Pharmaceutical</h3>
             <div class="yellow-line"></div>
           </div>
         </div>
