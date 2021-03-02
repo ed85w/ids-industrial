@@ -1,10 +1,10 @@
 <template>
     <div class="container-fluid" >
         <div id="nav-row" class="row justify-content-center" :class="{ scrolled : scrolled, active: showMobileMenu }">
-            <nav id="navbar1" class="col-12 col-md-10 col-lg-8 pt-0 pb-0 navbar" :class="{ scrolled : scrolled, active: showMobileMenu }">
+            <nav id="navbar1" class="col-12 col-md-10 col-lg-9 col-xl-8 p-0 navbar" :class="{ scrolled : scrolled, active: showMobileMenu }">
                 <div class="logo">
                     <NuxtLink to="/" exact>
-                        <div class="logo-container">
+                        <div class="logo-container pl-3">
                             <img class="logo logo-white" src="~static/img/IDS-logo-white.png" alt="IDS Industrial Logo in white">
                             <img class="logo logo-colour" src="~static/img/IDS-logo-colour.png" alt="IDS Industrial Logo in colour">
                         </div>
@@ -12,14 +12,14 @@
                 </div>
                 <ul class="nav-menu p-0">
                     <!-- item with subitems  -->
-                    <li class="pb-0 item has-submenu">
+                    <li class="item has-submenu">
                         <NuxtLink to="/#about" tabindex="0" exact>About</NuxtLink>
                         <button type="button" class="submenu-toggle ml-3 ml-md-1" aria-expanded="false" aria-label="expand about submenu" v-on:click="toggleItem($event)">
                             <span class="submenu-open-icon">
                                 <i class="fa fa-caret-down"></i>
                             </span>
                         </button>
-                        <ul class="pb-0 submenu about-submenu">
+                        <ul class="submenu about-submenu">
                             <li class="subitem"><a href="./docs/2021 IDS Industrial - For Clients.pdf" target="_blank">Company Brochure</a></li>
                             <li class="subitem"><a href="./docs/20210101 Health and Safety Policy Statement.pdf" target="_blank">Health & Safety Policy Statement</a></li>
                             <li class="subitem"><a href="./docs/20210101 Environmental Policy Statement.pdf" target="_blank">Environmental Policy Statement</a></li>
@@ -27,7 +27,7 @@
                     </li>
                     <!-- end of item with subitems  -->
                     <!-- item with subitems  -->
-                    <li class="pb-0 item has-submenu">
+                    <li class="item has-submenu">
                         <NuxtLink to="/services" tabindex="0" exact>Services</NuxtLink>
                         <button type="button" class="submenu-toggle ml-3 ml-md-1" aria-expanded="false" aria-label="expand services submenu" v-on:click="toggleItem($event)">
                             <span class="submenu-open-icon">
@@ -46,7 +46,7 @@
                     </li>
                     <!-- end of item with subitems  -->
                     <!-- item with subitems  -->
-                    <li class="pb-0 item has-submenu">
+                    <li class="item has-submenu">
                         <NuxtLink to="/industries" tabindex="0" exact>Industries</NuxtLink>
                         <button type="button" class="submenu-toggle ml-3 ml-md-1" aria-expanded="false" aria-label="expand industries submenu" v-on:click="toggleItem($event)">
                             <span class="submenu-open-icon">
@@ -168,7 +168,7 @@ body {
                 padding: 10px 0;
 
                 img.logo {
-                    height: 46px;
+                    height: 50px;
 
                     &.logo-white {
                         display: none;
@@ -219,17 +219,25 @@ body {
                 list-style: none;
                 text-align: center;
 
+                // first level 
                 li {
+                    display: block;
                     width: 100%;
                     margin: 0;
                     text-align: left;
-                    padding: 25px 20px;
+                    // padding: 25px 20px;
+                    background: #2a4b9be0;
+                    border-top: 2px solid $ids-blue;
+
+                    &:last-of-type {
+                        border-bottom: 2px solid $ids-blue;
+                    }
                     
 
                     a {
-                        color: $ids-blue;
+                        color: white;
                         transition: 0.3s ease-in;
-                        
+                        padding: 25px 20px;                        
                     }
 
 
@@ -237,8 +245,9 @@ body {
                         display: flex;
                         flex-wrap: wrap;
                         overflow: hidden;
-                        padding-right: 6px; 
+ 
 
+                        // second level 
                         ul.submenu {
                             width: 100%;
                             display: block;
@@ -260,7 +269,7 @@ body {
 
                             span i {
                                 padding: 0;
-                                color: $ids-blue;
+                                color: white;
                                 transition: 0.3s ease-in;
                             }
                         }
@@ -276,8 +285,9 @@ body {
                                 transition: max-height 0.5s ease;
 
                                 li.subitem {
-                                    background: $ids-yellow;
+                                    background: #f8d425;
                                 a {
+                                    display: block;
                                     color: $ids-blue;
                                 }
                             }
@@ -324,7 +334,6 @@ body.home {
             }
 
             div.logo-container {
-                // padding: 10px 0;
                 img.logo {
 
                     &.logo-white {
@@ -408,6 +417,12 @@ body {
                     margin: 0 1rem;
                     padding: 1px;
                     text-align: center;
+                    background: transparent;
+                    border: none;
+
+                    &:last-of-type {
+                        border: none;
+                    }
 
                     &:focus-visible {
                         outline: 2px solid black;
@@ -437,6 +452,15 @@ body {
                     justify-content: center;
                     align-items: center;
                     flex-wrap: nowrap;
+                    padding-right: 6px;
+
+                    &.submenu-active ul.submenu li.subitem {
+                        background: #2a4b9beb;
+
+                        a {
+                            color: white;
+                        }
+                    }
 
                     button.submenu-toggle {
 
@@ -448,7 +472,9 @@ body {
                         padding-top: 8px;
                         padding-bottom: 8px;
                         transition: 0s;
+                        color: $ids-blue;
                         }
+
                     }
 
                     a:focus {
@@ -471,7 +497,7 @@ body {
                             width: 238px;
                         }
 
-                        li {
+                        li.subitem {
                             background: $ids-blue;
                             padding: 10px 5px;
                             background: #2a4b9beb;

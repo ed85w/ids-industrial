@@ -23,7 +23,7 @@
             class="carousel-img carousel-3"
           ></b-carousel-slide>
         </b-carousel>
-        <div id="carousel-overlay" class="col-12 col-md-10 col-lg-8 text-right pb-3">
+        <div id="carousel-overlay" class="col-12 col-md-10 col-lg-9 col-xl-8 text-right pb-3">
           <h1 class="m-0 pb-5 home-title">Sustainable, Decommissioning<br class="d-none d-md-block"> & <br class="d-md-none">Demolition Management</h1>
           <h5 class="m-0 pb-5 home-tagline">Safe and cost-effective project management<br class="d-none d-md-block"> from conception <br class="d-md-none">through to completion</h5>
           <button class="btn yellow-btn"><nuxt-link to="/services">Our services</nuxt-link></button>
@@ -33,7 +33,7 @@
     <!-- about section  -->
     <section  class="container-fluid">
       <div class="row pt-3 pb-3 pt-md-5  pb-md-5 justify-content-center ">
-        <div class="col-12 col-md-10 col-lg-8 pt-5 pb-5">
+        <div class="col-12 col-md-10 col-lg-9 col-xl-8 pt-5 pb-5">
           <h3 class="sub-title link-title" id="about">
             About Us
           </h3>
@@ -48,7 +48,7 @@
     <!-- why choose IDS section  -->
     <section id="why-ids" class="container-fluid image-background-section">
       <div class="row pt-3 pt-md-5 pb-3 pb-md-5 justify-content-center">
-        <div class="col-12 col-md-10 col-lg-8 pt-5 pb-5">
+        <div class="col-12 col-md-10 col-lg-9 col-xl-8 pt-5 pb-5">
           <h3 class="sub-title">
             Why choose<br class="d-none d-lg-block"> IDS Industrial?
           </h3>
@@ -63,7 +63,7 @@
     <!-- experience section  -->
     <section class="container-fluid">
       <div class="row pt-3 pt-md-5 pb-3 pb-md-5 justify-content-center">
-        <div class="col-12 col-md-10 col-lg-8 pt-5 pb-5">
+        <div class="col-12 col-md-10 col-lg-9 col-xl-8 pt-5 pb-5">
           <h3 class="sub-title">
             Our Experience
           </h3>
@@ -180,8 +180,11 @@ div.wrapper {
           img.img-fluid {
             height: 100%;
             object-fit: cover;
-          }
+          }   
 
+          &.carousel-1 img.img-fluid {
+            filter: brightness(0.9)
+          }
           &.carousel-3 img.img-fluid {
             object-position: 10%;
           }

@@ -3,7 +3,7 @@
         <!-- landing  -->
         <div class="container-fluid image-background-section landing-services">
           <div class="row pt-5 pb-5 justify-content-center">
-            <div class="col-12 col-md-10 col-lg-8 pt-3 pb-3 pt-md-5 pb-md-5">
+            <div class="col-12 col-md-10 col-lg-9 col-xl-8 pt-3 pb-3 pt-md-5 pb-md-5">
               <h2 class="m-0 pb-5 page-title">Our Services</h2>
               <h5 class="m-0 pb-5 page-tagline">IDS Industrial can provide a full suite of services to prospective clients to ensure all aspects of the project are accounted for, planned for and managed accordingly.</h5>
             </div>
@@ -12,7 +12,7 @@
         <!-- feasibility section  -->
         <section class="container-fluid feasibility">
           <div class="row pt-5 pb-5 justify-content-center">
-            <div class="col-12 col-md-10 col-lg-8 pt-3 pb-3 pt-md-5 pb-md-5">
+            <div class="col-12 col-md-10 col-lg-9 col-xl-8 pt-3 pb-3 pt-md-5 pb-md-5">
               <h3 class="sub-title link-title" id="feasibility">
                 Project Feasibility Studies &<br>Commercial Planning
               </h3>
@@ -25,7 +25,7 @@
         <!-- Principal Designer section  -->
         <section class="container-fluid image-background-section principal">
           <div class="row pt-5 pb-5 justify-content-center ">
-            <div class="col-12 col-md-10 col-lg-8 pt-3 pb-3 pt-md-5 pb-md-5">
+            <div class="col-12 col-md-10 col-lg-9 col-xl-8 pt-3 pb-3 pt-md-5 pb-md-5">
               <h3 class="sub-title link-title" id="principal">
                 Principal Designer Duties &<br>Comprehensive HSE Management
               </h3>
@@ -38,7 +38,7 @@
         <!-- demolition section  -->
         <section  class="container-fluid">
           <div class="row pt-5 pb-5 justify-content-center demolition">
-            <div class="col-12 col-md-10 col-lg-8 pt-3 pb-3 pt-md-5 pb-md-5">
+            <div class="col-12 col-md-10 col-lg-9 col-xl-8 pt-3 pb-3 pt-md-5 pb-md-5">
               <h3 class="sub-title link-title" id="demolition">
                 Demolition Project <br class="d-md-none">Management
               </h3>
@@ -51,7 +51,7 @@
         <!-- explosive-demolition section  -->
         <section class="container-fluid image-background-section explosive-demolition">
           <div class="row pt-5 pb-5 justify-content-center ">
-            <div class="col-12 col-md-10 col-lg-8 pt-3 pb-3 pt-md-5 pb-md-5">
+            <div class="col-12 col-md-10 col-lg-9 col-xl-8 pt-3 pb-3 pt-md-5 pb-md-5">
               <h3 class="sub-title link-title" id="explosive-demolition">
                 Explosive Demolition <br class="d-md-none">Management
               </h3>
@@ -64,7 +64,7 @@
         <!-- temporary-works section  -->
         <section class="container-fluid temporary-works">
           <div class="row pt-5 pb-5 justify-content-center ">
-            <div class="col-12 col-md-10 col-lg-8 pt-3 pb-3 pt-md-5 pb-md-5">
+            <div class="col-12 col-md-10 col-lg-9 col-xl-8 pt-3 pb-3 pt-md-5 pb-md-5">
               <h3 class="sub-title link-title" id="temporary-works">
                 Temporary Works <br class="d-md-none">Management
               </h3>
@@ -77,7 +77,7 @@
         <!-- structural-engineering section  -->
         <section class="container-fluid image-background-section structural-engineering">
           <div class="row pt-5 pb-5 justify-content-center ">
-            <div class="col-12 col-md-10 col-lg-8 pt-3 pb-3 pt-md-5 pb-md-5" id="structural-engineering">
+            <div class="col-12 col-md-10 col-lg-9 col-xl-8 pt-3 pb-3 pt-md-5 pb-md-5" id="structural-engineering">
               <h3 class="sub-title link-title">
                 Structural Engineering
               </h3>
@@ -90,7 +90,7 @@
         <!-- remediation section  -->
         <section class="container-fluid remediation">
           <div class="row pt-5 pb-5 justify-content-center ">
-            <div class="col-12 col-md-10 col-lg-8 pt-3 pb-3 pt-md-5 pb-md-5">
+            <div class="col-12 col-md-10 col-lg-9 col-xl-8 pt-3 pb-3 pt-md-5 pb-md-5">
               <h3 class="sub-title link-title" id="remediation">
                 Remediation Management
               </h3>

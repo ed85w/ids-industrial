@@ -3,7 +3,7 @@
     <!-- landing  -->
     <div class="container-fluid image-background-section landing-industries">
       <div class="row pt-5 pb-5 justify-content-center">
-        <div class="col-12 col-md-10 col-lg-8 pt-3 pb-3 pt-md-5 pb-md-5">
+        <div class="col-12 col-md-10 col-lg-9 col-xl-8 pt-3 pb-3 pt-md-5 pb-md-5">
           <h2 class="m-0 pb-5 page-title">Our Industries</h2>
           <h5 class="m-0 pb-5 page-tagline">Experienced and competent demolition management</h5>
         </div>
@@ -12,13 +12,13 @@
     <!-- Manufacturing   -->
     <section class="container-fluid manufacturing">
       <div class="row pt-5 pb-5 pb-md-0 justify-content-center">
-        <div class="col-12 col-md-10 col-lg-8 pt-3 pb-3 pt-md-5 pb-md-5">
+        <div class="col-12 col-md-10 col-lg-9 col-xl-8 pt-3 pb-3 pt-md-5 pb-md-5">
           <div class="title-container">
             <h3 class="m-0 sub-title title-cover link-title" id="manufacturing">Manufacturing & Industrial</h3>
             <div class="yellow-line"></div>
           </div>
         </div>
-        <div class="col-12 col-md-10 col-lg-8 pt-3 pb-3 pt-md-5 pb-md-5">
+        <div class="col-12 col-md-10 col-lg-9 col-xl-8 pt-3 pb-3 pt-md-5 pb-md-5">
           <div class="row">
             <div class="col-12 col-md-6">
               <p class="body-text bold-on-desktop">Manufacturing industries in the UK, Europe and across the world are changing at astronomical speeds. As production techniques change, energy consumption is reviewed and new markets emerge, industry is forever evolving to meet the needs of consumers.</p>
@@ -38,13 +38,13 @@
     <!-- Oil & Gas   -->
     <section class="container-fluid oil-and-gas">
       <div class="row pt-5 pb-5 justify-content-center">
-        <div class="col-12 col-md-10 col-lg-8 pt-3 pb-3 pt-md-5 pb-md-5">
+        <div class="col-12 col-md-10 col-lg-9 col-xl-8 pt-3 pb-3 pt-md-5 pb-md-5">
           <div class="title-container">
             <h3 class="m-0 sub-title title-cover link-title" id="oil-and-gas">Oil & Gas</h3>
             <div class="yellow-line"></div>
           </div>
         </div>
-        <div class="col-12 col-md-10 col-lg-8 pt-3 pb-3 pt-md-5 pb-md-5">
+        <div class="col-12 col-md-10 col-lg-9 col-xl-8 pt-3 pb-3 pt-md-5 pb-md-5">
           <div class="row">
             <div class="col-12 col-md-6">
               <p class="body-text bold-on-desktop">The Oil & Gas industry is facing some of the biggest challenges within the industrial decommissioning and demolition arena.</p>
@@ -58,19 +58,19 @@
         </div>
       </div>
       <div class="row image-container">
-        <img class="full-img" src="~static/img/egypt-lifting.jpeg" alt="egypt lifting">
+        <img class="full-img egypt-img" src="~static/img/egypt-lifting.jpeg" alt="egypt lifting">
       </div>
     </section>
     <!-- power-generation   -->
     <section class="container-fluid power-generation">
       <div class="row pt-5 pb-5 pb-md-0 justify-content-center">
-        <div class="col-12 col-md-10 col-lg-8 pt-3 pb-3 pt-md-5 pb-md-5">
+        <div class="col-12 col-md-10 col-lg-9 col-xl-8 pt-3 pb-3 pt-md-5 pb-md-5">
           <div class="title-container">
             <h3 class="m-0 sub-title title-cover link-title" id="power-generation">Power Generation</h3>
             <div class="yellow-line"></div>
           </div>
         </div>
-        <div class="col-12 col-md-10 col-lg-8 pt-3 pb-3 pt-md-5 pb-md-5">
+        <div class="col-12 col-md-10 col-lg-9 col-xl-8 pt-3 pb-3 pt-md-5 pb-md-5">
           <div class="row">
             <div class="col-12 col-md-6">
               <p class="body-text bold-on-desktop">The world is changing. As governments across the world look to greener alternatives when producing energy, many older power stations are being closed down and being replaced with more efficient, greener alternatives. </p>
@@ -91,13 +91,13 @@
     <!-- petrochemical   -->
     <section class="container-fluid petrochemical">
       <div class="row pt-5 pb-5 justify-content-center">
-        <div class="col-12 col-md-10 col-lg-8 pt-3 pb-3 pt-md-5 pb-md-5">
+        <div class="col-12 col-md-10 col-lg-9 col-xl-8 pt-3 pb-3 pt-md-5 pb-md-5">
           <div class="title-container">
             <h3 class="m-0 sub-title title-cover link-title" id="petrochemical">Petrochemical</h3>
             <div class="yellow-line"></div>
           </div>
         </div>
-        <div class="col-12 col-md-10 col-lg-8 pt-3 pb-3 pt-md-5 pb-md-5">
+        <div class="col-12 col-md-10 col-lg-9 col-xl-8 pt-3 pb-3 pt-md-5 pb-md-5">
           <div class="row">
             <div class="col-12 col-md-6">
               <p class="body-text bold-on-desktop">IDS have successfully managed Petrochemical projects in the UK, Continental Europe, the Middle East and the Far East.</p>
@@ -119,13 +119,13 @@
     <!-- Pharmaceutical   -->
     <section class="container-fluid pharmaceutical">
       <div class="row pt-5 pb-5 justify-content-center">
-        <div class="col-12 col-md-10 col-lg-8 pt-3 pb-3 pt-md-5 pb-md-5">
+        <div class="col-12 col-md-10 col-lg-9 col-xl-8 pt-3 pb-3 pt-md-5 pb-md-5">
           <div class="title-container">
             <h3 class="m-0 sub-title title-cover link-title" id="pharmaceutical">Pharmaceutical</h3>
             <div class="yellow-line"></div>
           </div>
         </div>
-        <div class="col-12 col-md-10 col-lg-8 pt-3 pb-3 pt-md-5 pb-md-5">
+        <div class="col-12 col-md-10 col-lg-9 col-xl-8 pt-3 pb-3 pt-md-5 pb-md-5">
           <div class="row">
             <div class="col-12 col-md-6">
               <p class="body-text bold-on-desktop">Pharmaceutical manufacturing offers complexities different to all other sectors. Often structures are deceptively complex and are full of hidden dangers. IDS can assist clients to reduce the risk of decommissioning and demolition projects to the ALARP levels. </p>
@@ -173,24 +173,6 @@ export default {
         }
       });
     })
-    // var fullImg = gsap.utils.toArray('.full-img');
-    // fullImg.forEach((fullImg) => {
-
-    //   // fullImg.style.objectPosition = `50% ${-innerHeight / 2}px`;
-    //   fullImg.style.objectPosition = `50% ${(-innerHeight / 2) - 200}px`;
-
-    //   gsap.to(fullImg, { 
-    //     // objectPosition: `50% ${innerHeight / 2}px`,
-    //     objectPosition: `50% ${(innerHeight / 2) - 200}px`,
-    //     ease: "none",
-    //     scrollTrigger: {
-    //       trigger: fullImg,
-    //         start: "top bottom", //when top of element crosses 80% from of page
-    //         end: "bottom top",   //when bottom of element crosses center of page
-    //         scrub: true
-    //     }
-    //   });
-    // })
   }, 
 }
 </script>
@@ -198,7 +180,7 @@ export default {
 <style lang="scss">
 
 .landing-industries {
-  background: linear-gradient(rgba($ids-blue, 0.2), rgba($ids-blue, 0.2)), url('~static/img/steel-mill.jpg') 50% 50% / cover no-repeat;
+  background: linear-gradient(rgba($ids-blue, 0.2), rgba($ids-blue, 0.2)), url('~static/img/steel-mill.jpg') 50% 90% / cover no-repeat;
 }
 
 img.full-img {

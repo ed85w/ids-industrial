@@ -2,11 +2,11 @@
     <div class="page-content">
         <div class="container-fluid image-background-section landing-contact">
             <div class="row pt-5 pb-5 justify-content-center">
-                <div class="col-12 col-md-10 col-lg-8 pt-3 pb-3 pt-md-5 pb-md-5">
+                <div class="col-12 col-md-10 col-lg-9 col-xl-8 pt-3 pb-3 pt-md-5 pb-md-5">
                     <h2 class="m-0 page-title">Contact us</h2>
                     <!-- <h5 class="m-0 pb-5">Project delivery starts here</h5> -->
                 </div>
-                <div class="col-12 col-md-10 col-lg-8 pt-3 pb-3 pt-md-5 pb-md-5">
+                <div class="col-12 col-md-10 col-lg-9 col-xl-8 pt-3 pb-3 pt-md-5 pb-md-5">
                     <form method="POST" action="https://formspree.io/f/mdopvvzw">
                     <div class="form-row">
                         <div class="col-12 col-md-6 pr-md-3">
@@ -46,7 +46,7 @@
         </div>
         <!-- <section class="contact-form mt-5">
             <div class="row justify-content-center">
-                <div class="col-12 col-md-10 col-lg-8 pt-3 pb-3 pt-md-5 pb-md-5">
+                <div class="col-12 col-md-10 col-lg-9 col-xl-8 pt-3 pb-3 pt-md-5 pb-md-5">
                     <form method="POST" action="https://formspree.io/f/mdopvvzw">
                     <div class="form-row">
                         <div class="form-group col-12 col-md-6">
@@ -79,7 +79,7 @@
         </section> -->
         <section class="container-fluid directors">
             <div class="row pt-5 pb-5 justify-content-center">
-                <div class="col-12 col-md-10 col-lg-8 pt-3 pb-3 pt-md-5 pb-md-5">
+                <div class="col-12 col-md-10 col-lg-9 col-xl-8 pt-3 pb-3 pt-md-5 pb-md-5">
                     <div class="row">
                         <div class="col-12 col-md-6 pb-5 pb-md-0 text-center">   
                             <img class="contact-img" src="~static/img/dave-straker.jpg" alt="Dave Straker - director of IDS Industrial">
