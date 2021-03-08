@@ -185,7 +185,7 @@ body {
             #burger-menu {
                 display: block;
                 position: absolute;
-                top: 14px;
+                top: 18px;
                 right: 9px;
                 background: transparent;
                 border: none;

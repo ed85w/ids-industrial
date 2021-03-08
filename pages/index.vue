@@ -162,7 +162,7 @@ div.wrapper {
 
     .row.landing-home {
       position: relative;
-      height: 80vh;
+      height: 90vh;
       min-height: 480px;
       color: white;
 
