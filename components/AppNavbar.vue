@@ -187,6 +187,7 @@ body {
                 position: absolute;
                 top: 18px;
                 right: 9px;
+                padding-right: 0;
                 background: transparent;
                 border: none;
                 z-index: 9999;
