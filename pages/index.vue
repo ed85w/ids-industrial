@@ -23,7 +23,7 @@
             class="carousel-img carousel-3"
           ></b-carousel-slide>
         </b-carousel>
-        <div id="carousel-overlay" class="col-12 col-md-10 col-lg-9 col-xl-8 text-right pb-3">
+        <div id="carousel-overlay" class="col-12 col-md-10 col-lg-9 col-xl-8 text-right pb-4">
           <h1 class="m-0 pb-5 home-title">Sustainable, Decommissioning<br class="d-none d-md-block"> & <br class="d-md-none">Demolition Management</h1>
           <h5 class="m-0 pb-5 home-tagline">Safe and cost-effective project management<br class="d-none d-md-block"> from conception <br class="d-md-none">through to completion</h5>
           <button class="btn yellow-btn"><nuxt-link to="/services">Our services</nuxt-link></button>
@@ -162,7 +162,7 @@ div.wrapper {
 
     .row.landing-home {
       position: relative;
-      height: 90vh;
+      height: 93vh;
       min-height: 480px;
       color: white;
 

@@ -383,216 +383,229 @@ body.home {
 // laptops/desktops 
 @media (min-width: 992px) {
 
-body {
+    body {
 
-    #nav-row {
+        #nav-row {
 
-        overflow: visible;
+            overflow: visible;
 
-        #navbar1 {
-            position: relative;
-            display: flex;
-            align-items: center;
-            overflow: initial;
-
-            // logo 
-            img.logo {
-                height: 80px;
-            }
-
-            #burger-menu {
-                display: none;
-            }
-
-            ul.nav-menu {
-                display: flex;
+            #navbar1 {
                 position: relative;
-                justify-content: center;
+                display: flex;
                 align-items: center;
-                width: auto;
-                margin: 0;
+                overflow: initial;
 
-
-                // nav item styling 
-                li {
-                    width: auto;
-                    margin: 0 1rem;
-                    padding: 1px;
-                    text-align: center;
-                    background: transparent;
-                    border: none;
-
-                    &:last-of-type {
-                        border: none;
-                    }
-
-                    &:focus-visible {
-                        outline: 2px solid black;
-                    }
-
-                    a { 
-                        width: initial;
-                        display: block;
-                        padding: 5px;
-                        font-size: 14px;
-                        color: $ids-blue;
-                        transition: 0s;
-
-                        &:hover {
-                            text-decoration: none;
-                        }
-                    }
-
-                    &:hover {
-                        background: $ids-yellow;
-                        transition: 0s;
-                    }
-
+                // logo 
+                img.logo {
+                    height: 80px;
                 }
 
-                li.item.has-submenu {
+                #burger-menu {
+                    display: none;
+                }
+
+                ul.nav-menu {
+                    display: flex;
+                    position: relative;
                     justify-content: center;
                     align-items: center;
-                    flex-wrap: nowrap;
-                    padding-right: 6px;
+                    width: auto;
+                    margin: 0;
 
-                    &.submenu-active ul.submenu li.subitem {
-                        background: #2a4b9beb;
 
-                        a {
-                            color: white;
+                    // nav item styling 
+                    li {
+                        width: auto;
+                        margin: 1rem 1rem 0 1rem;
+                        padding: 1px;
+                        text-align: center;
+                        background: transparent;
+                        border: none;
+
+                        &:last-of-type {
+                            border: none;
                         }
-                    }
-
-                    button.submenu-toggle {
 
                         &:focus-visible {
-                            outline: -webkit-focus-ring-color auto 1px;
+                            outline: 2px solid black;
                         }
 
-                        span i {
-                        padding-top: 8px;
-                        padding-bottom: 8px;
-                        transition: 0s;
-                        color: $ids-blue;
+                        a { 
+                            width: initial;
+                            display: block;
+                            padding: 5px;
+                            font-size: 14px;
+                            color: $ids-blue;
+                            transition: 0s;
+
+                            &:hover {
+                                text-decoration: none;
+                            }
+                        }
+
+                        &:hover {
+                            background: $ids-yellow;
+                            transition: 0s;
                         }
 
                     }
 
-                    a:focus {
-                        outline: none;
-                    }
-                    a:focus-visible {
-                        outline: -webkit-focus-ring-color auto 1px;
-                    }
-                    // submenu 
-                    ul.submenu {
-                        position: absolute;
-                        top: 100%;
-                        left: initial;
-                        height: auto;
-                        display: none;
-                        width: auto;
-                        text-align: center;
+                    li.item.has-submenu {
+                        justify-content: center;
+                        align-items: center;
+                        flex-wrap: nowrap;
+                        padding-right: 6px;
 
-                        &.about-submenu {
-                            width: 238px;
-                        }
-
-                        li.subitem {
-                            background: $ids-blue;
-                            padding: 10px 5px;
+                        &.submenu-active ul.submenu li.subitem {
                             background: #2a4b9beb;
-                            border-top: 3px solid #2a4b9b;
 
                             a {
                                 color: white;
-
-                                &:focus {
-                                    outline: none;
-                                }
-                                &:focus-visible {
-                                    outline: -webkit-focus-ring-color auto 1px;
-                                }
-
-                            }
-
-                            &:hover a {
-                                color: $ids-yellow;
                             }
                         }
 
-                        // TRIANGLES 
-                        &::before {
-                            content: "";
-                            background: transparent;
-                            position: relative;
-                            pointer-events: none;
-                            width: 0; 
-                            height: 0; 
-                            border-left: 20px solid transparent;
-                            border-right: 20px solid transparent;
-                            border-bottom: 25px solid $ids-blue;
-                            top: -22px;
-                            // left: 50%;
-                            // transform: translateX(-50%);
-                        }
-                        
-                    }
+                        button.submenu-toggle {
 
-                    // active submenu 
-                    &.has-submenu:hover > ul.submenu {
-                        display: block;
-                        padding: 0;
+                            &:focus-visible {
+                                outline: -webkit-focus-ring-color auto 1px;
+                            }
+
+                            span i {
+                            padding-top: 8px;
+                            padding-bottom: 8px;
+                            transition: 0s;
+                            color: $ids-blue;
+                            }
+
+                        }
+
+                        a:focus {
+                            outline: none;
+                        }
+                        a:focus-visible {
+                            outline: -webkit-focus-ring-color auto 1px;
+                        }
+                        // submenu 
+                        ul.submenu {
+                            position: absolute;
+                            top: 100%;
+                            left: initial;
+                            height: auto;
+                            display: none;
+                            width: auto;
+                            text-align: center;
+
+                            &.about-submenu {
+                                width: 238px;
+                            }
+
+                            li.subitem {
+                                background: $ids-blue;
+                                padding: 10px 5px;
+                                margin: 0 1rem;
+                                background: #2a4b9beb;
+                                border-top: 3px solid #2a4b9b;
+
+                                a {
+                                    color: white;
+
+                                    &:focus {
+                                        outline: none;
+                                    }
+                                    &:focus-visible {
+                                        outline: -webkit-focus-ring-color auto 1px;
+                                    }
+
+                                }
+
+                                &:hover a {
+                                    color: $ids-yellow;
+                                }
+                            }
+
+                            // TRIANGLES 
+                            &::before {
+                                content: "";
+                                background: transparent;
+                                position: relative;
+                                pointer-events: none;
+                                width: 0; 
+                                height: 0; 
+                                border-left: 20px solid transparent;
+                                border-right: 20px solid transparent;
+                                border-bottom: 25px solid $ids-blue;
+                                top: -22px;
+                                // left: 50%;
+                                // transform: translateX(-50%);
+                            }
+                            
+                        }
+
+                        // active submenu 
+                        &.has-submenu:hover > ul.submenu {
+                            display: block;
+                            padding: 0;
+                        }
                     }
                 }
             }
         }
     }
-}
 
 // homepage only styles 
 
-body.home {
+    body.home {
 
-    #nav-row #navbar1 ul.nav-menu li {
-        a {
-        color: white;
-        // transition: 0s; NOT SURE ABOUT THIS ONE?
-        }
-    
-        &:hover {
-
+        #nav-row #navbar1 ul.nav-menu li {
             a {
-            text-decoration: none;
-            color: $ids-blue;
-            transition: 0s;
+            color: white;
+            // transition: 0s; NOT SURE ABOUT THIS ONE?
             }
-        }
-        &.item.has-submenu:hover {
-            button.submenu-toggle span i {
+        
+            &:hover {
+
+                a {
+                text-decoration: none;
                 color: $ids-blue;
                 transition: 0s;
+                }
+            }
+            &.item.has-submenu:hover {
+                button.submenu-toggle span i {
+                    color: $ids-blue;
+                    transition: 0s;
+                }
             }
         }
-    }
 
-    #nav-row {
+        #nav-row {
 
-        #navbar1 ul.nav-menu li.item.has-submenu button.submenu-toggle span i {
-            color: white;
-        }
+            #navbar1 ul.nav-menu li.item.has-submenu button.submenu-toggle span i {
+                color: white;
+            }
 
-        &.scrolled #navbar1 ul.nav-menu li a {
-            color: $ids-blue;
-        }
-    
+            &.scrolled #navbar1 ul.nav-menu li a {
+                color: $ids-blue;
+            }
+        
 
-        &.scrolled #navbar1 ul.nav-menu li.item.has-submenu button.submenu-toggle span i {
-            color: $ids-blue;
+            &.scrolled #navbar1 ul.nav-menu li.item.has-submenu button.submenu-toggle span i {
+                color: $ids-blue;
+            }
         }
     }
 }
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {
+
+    body #nav-row #navbar1 div.logo-container img.logo {
+        height: 60px;
+    }
+
+    body #nav-row #navbar1 ul.nav-menu li a  {
+        font-size: 15px;
+    }
 
 }
 
