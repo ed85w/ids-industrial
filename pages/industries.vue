@@ -190,6 +190,11 @@ img.full-img {
   object-position: 50% 50%;
 }
 
+// iphone rendering as audiowide for some reason 
+.page-tagline {
+    font-family: 'Lato', sans-serif;
+}
+
 
 /* tablets and above */
 @media (min-width: 768px) {

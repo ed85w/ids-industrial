@@ -44,39 +44,6 @@
                 </div>
             </div>
         </div>
-        <!-- <section class="contact-form mt-5">
-            <div class="row justify-content-center">
-                <div class="col-12 col-md-10 col-lg-9 col-xl-8 pt-3 pb-3 pt-md-5 pb-md-5">
-                    <form method="POST" action="https://formspree.io/f/mdopvvzw">
-                    <div class="form-row">
-                        <div class="form-group col-12 col-md-6">
-                        <label for="name">Name:</label>
-                        <input id="name" type="text" class="form-control" name="name" required>
-                        </div>
-
-                        <div class="form-group col-12 col-md-6">
-                        <label for="phone">Phone:</label>
-                        <input id="phone" type="text" class="form-control" name="phone" required>
-                        </div>
-
-                        <div class="form-group col-12">
-                        <label for="email">Email address:</label>
-                        <input id="email" type="email" class="form-control" name="email" required>
-                        </div>
-
-                        <div class="form-group col-12">
-                        <label for="enquiry">Enquiry:</label>
-                        <textarea id="enquiry" class="form-control" name="enquiry" required />
-                        </div>
-
-                        <button type="btn" class="btn yellow-btn mt-4" aria-label="submit form">
-                        Submit
-                        </button>
-                    </div>
-                    </form>
-                </div>
-            </div>
-        </section> -->
         <section class="container-fluid directors">
             <div class="row pt-5 pb-5 justify-content-center">
                 <div class="col-12 col-md-10 col-lg-9 col-xl-8 pt-3 pb-3 pt-md-5 pb-md-5">
