@@ -40,6 +40,7 @@ export default {
     top: 50%;
     transform: translateY(-50%);
     width: 220px;
+    height: 55px;
 
   }
 
