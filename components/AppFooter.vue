@@ -13,6 +13,7 @@
             <p><a href="tel:+44 7920 102357">+44 7920 102357</a></p>
             <p><a href="mailto:dave@idsindustrial.co.uk">dave@idsindustrial.co.uk</a><br>
             <a href="mailto:ian@idsindustrial.co.uk">ian@idsindustrial.co.uk</a></p>
+            <p class="small"><a href="www.koodi.co.uk" target="_blank" rel="noopener">Built by Koodi</a></p>
           </div>
         </div>
       </div>
@@ -49,6 +50,10 @@ export default {
     font-family: 'Lato', sans-serif;
     font-size: 14px;
     line-height: 1.3;
+
+    &.small {
+      font-size: 12px;
+    }
     
     a {
       font-family: 'Lato', sans-serif;
